@@ -1,4 +1,5 @@
 library(deSolve)
+library(ggplot2)
 
 #=================#
 # Model functions #
@@ -166,6 +167,75 @@ WSSR <- function(observed, predicted, weights, comp.names =NULL){
   return(WSSR_results)
 }
 
+# This general objective function is used only to optimize all the parameters 
+# in order to find the optimal solution
+general_obj_func <- function(x, PFAS_data, Cwater, age,
+                             temperatures, MW, weights_values){
+  
+  # Indexes of body burden and exposure time in data frame
+  BB_index <- c(2,4,6)
+  ExpTime_index <- c(1,3,5)
+  Errors_index <- c(2,4,6)
+  # Age of D.magna at beginning of exposure
+  init_age <- age
+  # Create a counter to mark the position of fitted parameters of x
+  # that corresponds to a specific combination of PFAS and temperature
+  counter <- 1
+  score <- rep(NA, length(temperatures))
+  # Iterate over PFAS names 
+  # Load PFAS data
+  df <- PFAS_data
+  # Iterate over number of distinct temperature used in the experiment
+  ku <- x[1]
+  kon <- x[2]
+  Ka <- x[3]
+  ke <- x[4]
+  C_prot_init <- x[5]
+  
+  # Iterate over number of distinct temperature used in the experiment
+  for (temp_iter in 1:length(temperatures)){
+    # Initial water concentration of PFAS at selected temperature
+    C_water <-  Cwater[temp_iter]
+    # Temperature of experiment
+    Temp <- temperatures[temp_iter]
+    # Time of measurement of selected PFAS at selected temperature
+    exp_time <- round(df[!is.na(df[,ExpTime_index[temp_iter]]),ExpTime_index[temp_iter]],1)
+    # Body burden of selected PFAS at selected temperature
+    BodyBurden <- df[!is.na(df[,BB_index[temp_iter]]),BB_index[temp_iter]]
+    # Errors values of selected PFAS at selected temperature
+    error_values <- weights_values[!is.na(weights_values[,Errors_index[temp_iter]]),Errors_index[temp_iter]]
+    # Time used by numerical solver that integrates the system of ODE
+    sol_times <- seq(0,15, 0.1)
+    
+    # Initial conditions
+    inits <- c( "Cw" = C_water[[1]],  "C_daphnia_unbound" = 0,
+                "C_daphnia_bound" = 0, "C_prot_un" = C_prot_init[[1]])
+    
+    params <- c("init_age"=age, "Temp" = Temp, "ku"= ku[[1]], 
+                "kon" = kon[[1]], "Ka" = Ka[[1]], "ke"= ke[[1]], "MW" = MW)
+    
+    solution <- data.frame(deSolve::ode(times = sol_times,  func = ode_func,
+                                        y = inits,
+                                        parms = params,
+                                        method="lsodes",
+                                        rtol = 1e-5, atol = 1e-5))
+    
+    if(sum(round(solution$time,2) %in% exp_time) == length(exp_time)){
+      results <- solution[which(round(solution$time,2) %in% exp_time), 'C_tot']
+    }else{
+      stop(print("Length of predictions is not equal to the length of data"))
+    }
+    score[temp_iter] <- WSSR(list(BodyBurden), list(results), list(error_values))
+  } 
+  
+  # Take the average score of all PFAS and temperatures 
+  final_score <- mean(score)  
+  return(final_score)
+}
+
+# The updated objective function is a slightly changed version of the general objective function
+# in order to be used inside the profile likelihood function and be able to change 
+# the constant parameter easily
 updated_obj_func <- function(x, constant_theta, constant_theta_name, params_names, 
                              PFAS_data, Cwater, age,
                              temperatures, MW, weights_values){
@@ -311,8 +381,79 @@ profile_likelihood <- function(thetas, thetas_names, lb, ub, N_thetas, N_iter){
   return(results_list)
 }
 
+# A function to estimate confidence intervals
+
+confidence_intervals_estimation <- function(profile_likelihood_results, general_optimal_parameters,
+                                            general_optimal_objective_value, 
+                                            alpha=0.95, df=1){
+  
+  # a dataframe with the values of the theta_i and the corresponding objective function values
+  # profile_likelihood_results = PL$ku
+  # general_optimal_parameters = global_optimization$solution
+  # general_optimal_objective_value = global_optimization$objective
+
+  Delta_aplha <- qchisq(p=alpha, df)
+  
+  # Keep only those theta values which satisfy the condition
+  # x2(theta) - x2(theta_optimal) < Delta_aplha
+  keep_thetas <- data.frame(matrix(NA, ncol = 2))
+  colnames(keep_thetas) <- colnames(profile_likelihood_results)
+  
+  for (i in 1:nrow(profile_likelihood_results)) {
+    if(profile_likelihood_results$Likelihood[i] < Delta_aplha + general_optimal_objective_value){
+      keep_thetas[i,] <- profile_likelihood_results[i,]
+    }
+  }
+  keep_thetas <- keep_thetas[order(keep_thetas[,1]), ]
+  keep_thetas <- na.omit(keep_thetas)
+  
+  conf_intervals <- c(keep_thetas[which.min(keep_thetas[,1]),1],
+                      keep_thetas[which.max(keep_thetas[,1]),1])
+  return(conf_intervals)
+}
+
+
+#############################################
+# Here we optimize the value of the 5 parameters in order to find best solution
+# Load the experimental data
+data_ls <- openxlsx::read.xlsx ('C:/Users/vassi/Documents/GitHub/PFAS_biokinetics_models/D.Magna/Wang_2023/Wang_data_reduced2.xlsx', sheet = 'PFDoA')
+data_plot <- openxlsx::read.xlsx ('C:/Users/vassi/Documents/GitHub/PFAS_biokinetics_models/D.Magna/Wang_2023/Wang_data.xlsx', sheet = 'PFDoA')
+errors <- read.csv('C:/Users/vassi/Documents/GitHub/Identifiability/PFDoA_errors.csv')
+
+# the selected settings for the optimizer
+opts <- list( "algorithm" = "NLOPT_LN_SBPLX", #"NLOPT_LN_BOBYQA" #"NLOPT_LN_COBYLA"
+              "xtol_rel" = 0, 
+              "ftol_rel" = 0,
+              "ftol_abs" = 0.0,
+              "xtol_abs" = 0.0 ,
+              "maxeval" = 3000,
+              "print_level" = 1)
+
+# Convert water concentration in ng/L
+Cwater = c(1.44, 2.05, 2.31)*1000
+names(Cwater) <- c("16oC", "20oC", "24oC")
+age = 7+7 # age of D.magna at the beginning of exposure in days
+temperatures <- c(16, 20, 24) #experiment temperature in oC 
+
+MW <- 614 # molecular weight of PFDoA
+
+x0 <- c(7.434352e+00, 6.109240e+00, 6.825681e+00, 7.551428e+00, 1.935566e-05)
+
+
+global_optimization<- nloptr::nloptr(x0 = x0,
+                              eval_f = general_obj_func,
+                              lb	=  c(5,-1,1,5, 1e-07),
+                              ub =   c(12,10, 9, 12,  1e-03),
+                              opts = opts,
+                              PFAS_data = data_ls,
+                              Cwater = Cwater,
+                              age = age ,
+                              temperatures = temperatures,
+                              MW = MW,
+                              weights_values = errors)
+
 ###############################
-optimized_params <- c(7.434352e+00, 6.109240e+00, 6.825681e+00, 7.551428e+00, 1.935566e-05)
+optimized_params <- global_optimization$solution
 names(optimized_params) <- c('ku', 'kon', 'Ka', 'ke', 'C_prot_init')
 
 thetas <- optimized_params
@@ -323,4 +464,18 @@ lb <- 0.75*thetas
 # upper bounds of parameters
 ub <- 1.25*thetas
 
-PL <- profile_likelihood(thetas, thetas_names, lb, ub, N_thetas=10, N_iter=200)
+PL <- profile_likelihood(thetas, thetas_names, lb, ub, N_thetas=100, N_iter=200)
+
+conf_intervals_list <- list(NA)
+for (i in 1:length(PL)) {
+  conf_intervals_list[[i]] <- confidence_intervals_estimation(profile_likelihood_results = PL[[i]],
+                                                              general_optimal_parameters = global_optimization$solution,
+                                                              general_optimal_objective_value = global_optimization$objective, 
+                                                              alpha=0.95, df=1)
+  names(conf_intervals_list)[i] <- names(PL)[i]
+}
+
+ggplot()+
+  geom_line(data = PL$Ka,  aes(x=Ka, y=Likelihood))+
+  geom_hline(yintercept=global_optimization$objective + qchisq(0.95,1), linetype="dashed", color = "red")+
+  geom_hline(yintercept=global_optimization$objective + qchisq(0.95,5), linetype="dashed", color = "black")
