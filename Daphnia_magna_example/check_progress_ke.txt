@@ -1,34 +1,509 @@
 Forward search begins... 
-Calculating PL for parameter  ke  and iter =  1 .  step = 1300862 ke  =  100756471 => Likelihood =  6.410139 
-Calculating PL for parameter  ke  and iter =  2 .  step = 1341892 ke  =  102098363 => Likelihood =  6.40577 
-Calculating PL for parameter  ke  and iter =  3 .  step = 1337166 ke  =  103435529 => Likelihood =  6.406142 
-Calculating PL for parameter  ke  and iter =  4 .  step = 1391441 ke  =  104826970 => Likelihood =  6.405721 
-Calculating PL for parameter  ke  and iter =  5 .  step = 1405711 ke  =  106232681 => Likelihood =  6.402664 
-Calculating PL for parameter  ke  and iter =  6 .  step = 1423638 ke  =  107656319 => Likelihood =  6.399811 
-Calculating PL for parameter  ke  and iter =  7 .  step = 1439802 ke  =  109096121 => Likelihood =  6.396163 
-Calculating PL for parameter  ke  and iter =  8 .  step = 1466452 ke  =  110562572 => Likelihood =  6.404307 
-Calculating PL for parameter  ke  and iter =  9 .  step = 1344613 ke  =  111907185 => Likelihood =  6.392577 
-Calculating PL for parameter  ke  and iter =  10 .  step = 1514544 ke  =  113421729 => Likelihood =  6.392027 
-Calculating PL for parameter  ke  and iter =  11 .  step = 1532324 ke  =  114954053 => Likelihood =  6.393753 
-Calculating PL for parameter  ke  and iter =  12 .  step = 1571257 ke  =  116525310 => Likelihood =  6.387286 
-Calculating PL for parameter  ke  and iter =  13 .  step = 1581181 ke  =  118106491 => Likelihood =  6.390119 
-Calculating PL for parameter  ke  and iter =  14 .  step = 1611570 ke  =  119718061 => Likelihood =  6.387961 
-Calculating PL for parameter  ke  and iter =  15 .  step = 1594525 ke  =  121312585 => Likelihood =  6.393011 
-Calculating PL for parameter  ke  and iter =  16 .  step = 1598609 ke  =  122911194 => Likelihood =  6.387662 
-Calculating PL for parameter  ke  and iter =  17 .  step = 1667136 ke  =  124578330 => Likelihood =  6.379004 
-Calculating PL for parameter  ke  and iter =  18 .  step = 1702134 ke  =  126280465 => Likelihood =  6.348035 
-Calculating PL for parameter  ke  and iter =  19 .  step = 1803918 ke  =  128084383 => Likelihood =  6.336417 
-Calculating PL for parameter  ke  and iter =  20 .  step = 1851277 ke  =  129935660 => Likelihood =  6.334425 
-Calculating PL for parameter  ke  and iter =  21 .  step = 1899771 ke  =  131835430 => Likelihood =  6.337631 
-Calculating PL for parameter  ke  and iter =  22 .  step = 1898186 ke  =  133733616 => Likelihood =  6.333114 
-Calculating PL for parameter  ke  and iter =  23 .  step = 1861950 ke  =  135595566 => Likelihood =  6.33521 
-Calculating PL for parameter  ke  and iter =  24 .  step = 1912553 ke  =  137508119 => Likelihood =  6.337452 
-Calculating PL for parameter  ke  and iter =  25 .  step = 1983484 ke  =  139491603 => Likelihood =  6.336087 
-Calculating PL for parameter  ke  and iter =  26 .  step = 1941428 ke  =  141433031 => Likelihood =  6.340998 
-Calculating PL for parameter  ke  and iter =  27 .  step = 2005885 ke  =  143438916 => Likelihood =  6.346268 
-Calculating PL for parameter  ke  and iter =  28 .  step = 1922270 ke  =  145361186 => Likelihood =  6.335973 
-Calculating PL for parameter  ke  and iter =  29 .  step = 1986187 ke  =  147347373 => Likelihood =  6.337847 
-Calculating PL for parameter  ke  and iter =  30 .  step = 2181042 ke  =  149528415 => Likelihood =  6.357824 
-Calculating PL for parameter  ke  and iter =  31 .  step = 2103001 ke  =  151631416 => Likelihood =  6.368511 
-Calculating PL for parameter  ke  and iter =  32 .  step = 2237493 ke  =  153868908 => Likelihood =  6.35683 
-Calculating PL for parameter  ke  and iter =  33 .  step = 2145667 ke  =  156014576 => Likelihood =  6.354889 
+Calculating PL for parameter  ke  and iter =  1 .  step = 0.01273471 kTime difference of 19.50028 mins
+iteration: 1
+	f(x) = 71.691562
+iteration: 2
+	f(x) = 7376.269479
+iteration: 3
+	f(x) = 1109.695667
+iteration: 4
+	f(x) = 6411.279060
+iteration: 5
+	f(x) = 221.122045
+iteration: 6
+	f(x) = 1140.279570
+iteration: 7
+	f(x) = 548.597797
+iteration: 8
+	f(x) = 911.062102
+iteration: 9
+	f(x) = 551.203054
+iteration: 10
+	f(x) = 178.339232
+iteration: 11
+	f(x) = 198.273092
+iteration: 12
+	f(x) = 322.176158
+iteration: 13
+	f(x) = 77.302294
+iteration: 14
+	f(x) = 412.824395
+iteration: 15
+	f(x) = 26.945122
+iteration: 16
+	f(x) = 86.130443
+iteration: 17
+	f(x) = 37.958223
+iteration: 18
+	f(x) = 47.590141
+iteration: 19
+	f(x) = 70.193433
+iteration: 20
+	f(x) = 23.385618
+iteration: 21
+	f(x) = 44.425084
+iteration: 22
+	f(x) = 13.929440
+iteration: 23
+	f(x) = 156.031682
+iteration: 24
+	f(x) = 10.269362
+iteration: 25
+	f(x) = 19.602561
+iteration: 26
+	f(x) = 25.132961
+iteration: 27
+	f(x) = 11.944221
+iteration: 28
+	f(x) = 23.091386
+iteration: 29
+	f(x) = 10.821262
+iteration: 30
+	f(x) = 31.917989
+iteration: 31
+	f(x) = 7.820067
+iteration: 32
+	f(x) = 12.141201
+iteration: 33
+	f(x) = 9.258960
+iteration: 34
+	f(x) = 8.912305
+iteration: 35
+	f(x) = 12.333898
+iteration: 36
+	f(x) = 8.121199
+iteration: 37
+	f(x) = 9.571668
+iteration: 38
+	f(x) = 7.960849
+iteration: 39
+	f(x) = 8.295382
+iteration: 40
+	f(x) = 7.952651
+iteration: 41
+	f(x) = 8.347495
+iteration: 42
+	f(x) = 7.757214
+iteration: 43
+	f(x) = 7.520000
+iteration: 44
+	f(x) = 7.711337
+iteration: 45
+	f(x) = 7.968621
+iteration: 46
+	f(x) = 7.634972
+iteration: 47
+	f(x) = 8.436663
+iteration: 48
+	f(x) = 7.550479
+iteration: 49
+	f(x) = 7.694847
+iteration: 50
+	f(x) = 7.546246
+iteration: 51
+	f(x) = 7.790261
+iteration: 52
+	f(x) = 7.525692
+iteration: 53
+	f(x) = 7.496496
+iteration: 54
+	f(x) = 7.294279
+iteration: 55
+	f(x) = 7.629284
+iteration: 56
+	f(x) = 7.515628
+iteration: 57
+	f(x) = 7.316051
+iteration: 58
+	f(x) = 7.499728
+iteration: 59
+	f(x) = 7.682746
+iteration: 60
+	f(x) = 7.498063
+iteration: 61
+	f(x) = 7.516053
+iteration: 62
+	f(x) = 7.469868
+iteration: 63
+	f(x) = 7.554353
+iteration: 64
+Called from: approx(c(15, 25), c(a_high_15, a_high_25), temperature)
+iteration: 1
+	f(x) = 71.691562
+iteration: 2
+	f(x) = 7376.269479
+iteration: 3
+	f(x) = 1109.695667
+iteration: 4
+	f(x) = 6411.279060
+iteration: 5
+	f(x) = 221.122045
+iteration: 6
+	f(x) = 1140.279570
+iteration: 7
+	f(x) = 548.597797
+iteration: 8
+	f(x) = 911.062102
+iteration: 9
+	f(x) = 551.203054
+iteration: 10
+	f(x) = 178.339232
+iteration: 11
+	f(x) = 198.273092
+iteration: 12
+	f(x) = 322.176158
+iteration: 13
+	f(x) = 77.302294
+iteration: 14
+	f(x) = 412.824395
+iteration: 15
+	f(x) = 26.945122
+iteration: 16
+	f(x) = 86.130443
+iteration: 17
+	f(x) = 37.958223
+iteration: 18
+	f(x) = 47.590141
+iteration: 19
+	f(x) = 70.193433
+iteration: 20
+	f(x) = 23.385618
+iteration: 21
+	f(x) = 44.425084
+iteration: 22
+	f(x) = 13.929440
+iteration: 23
+	f(x) = 156.031682
+iteration: 24
+	f(x) = 10.269362
+iteration: 25
+	f(x) = 19.602561
+iteration: 26
+	f(x) = 25.132961
+iteration: 27
+	f(x) = 11.944221
+iteration: 28
+	f(x) = 23.091386
+iteration: 29
+	f(x) = 10.821262
+iteration: 30
+	f(x) = 31.917989
+iteration: 31
+	f(x) = 7.820067
+iteration: 32
+	f(x) = 12.141201
+iteration: 33
+	f(x) = 9.258960
+iteration: 34
+	f(x) = 8.912305
+iteration: 35
+	f(x) = 12.333898
+iteration: 36
+	f(x) = 8.121199
+iteration: 37
+	f(x) = 9.571668
+iteration: 38
+	f(x) = 7.960849
+iteration: 39
+	f(x) = 8.295382
+iteration: 40
+	f(x) = 7.952651
+iteration: 41
+	f(x) = 8.347495
+iteration: 42
+	f(x) = 7.757214
+iteration: 43
+	f(x) = 7.520000
+iteration: 44
+	f(x) = 7.711337
+iteration: 45
+	f(x) = 7.968621
+iteration: 46
+	f(x) = 7.634972
+iteration: 47
+	f(x) = 8.436663
+iteration: 48
+	f(x) = 7.550479
+iteration: 49
+	f(x) = 7.694847
+iteration: 50
+	f(x) = 7.546246
+iteration: 51
+	f(x) = 7.790261
+iteration: 52
+	f(x) = 7.525692
+iteration: 53
+	f(x) = 7.496496
+iteration: 54
+	f(x) = 7.294279
+iteration: 55
+	f(x) = 7.629284
+iteration: 56
+	f(x) = 7.515628
+iteration: 57
+	f(x) = 7.316051
+iteration: 58
+	f(x) = 7.499728
+iteration: 59
+	f(x) = 7.682746
+iteration: 60
+	f(x) = 7.498063
+iteration: 61
+	f(x) = 7.516053
+iteration: 62
+	f(x) = 7.469868
+iteration: 63
+	f(x) = 7.554353
+iteration: 64
+	f(x) = 7.261148
+iteration: 65
+	f(x) = 7.540576
+iteration: 66
+	f(x) = 7.170727
+iteration: 67
+	f(x) = 7.285937
+iteration: 68
+	f(x) = 7.248762
+iteration: 69
+	f(x) = 7.304738
+iteration: 70
+	f(x) = 7.266017
+iteration: 71
+	f(x) = 7.275764
+iteration: 72
+	f(x) = 7.262018
+iteration: 73
+	f(x) = 7.266654
+iteration: 74
+	f(x) = 7.261762
+iteration: 75
+	f(x) = 7.264374
+iteration: 76
+	f(x) = 7.261729
+iteration: 77
+	f(x) = 7.263134
+iteration: 78
+	f(x) = 7.262554
+iteration: 79
+	f(x) = 7.263087
+iteration: 80
+	f(x) = 7.270467
+iteration: 81
+	f(x) = 7.271291
+iteration: 82
+	f(x) = 7.271613
+iteration: 83
+	f(x) = 7.271283
+iteration: 84
+	f(x) = 7.271733
+iteration: 85
+	f(x) = 7.271181
+iteration: 86
+	f(x) = 7.271269
+iteration: 87
+	f(x) = 7.271367
+iteration: 88
+	f(x) = 7.271769
+iteration: 89
+	f(x) = 7.275332
+iteration: 90
+	f(x) = 7.165505
+iteration: 91
+	f(x) = 7.166831
+iteration: 92
+	f(x) = 7.174290
+iteration: 93
+	f(x) = 7.171072
+iteration: 94
+	f(x) = 7.164431
+iteration: 95
+	f(x) = 7.271780
+iteration: 96
+	f(x) = 7.160624
+iteration: 97
+	f(x) = 7.266461
+iteration: 98
+	f(x) = 7.271372
+iteration: 99
+	f(x) = 7.165368
+iteration: 100
+	f(x) = 7.160978
+iteration: 101
+	f(x) = 7.269446
+iteration: 102
+	f(x) = 7.163647
+iteration: 103
+	f(x) = 7.159471
+iteration: 104
+	f(x) = 7.156624
+iteration: 105
+	f(x) = 7.155616
+iteration: 106
+	f(x) = 7.152098
+iteration: 107
+	f(x) = 7.261722
+iteration: 108
+	f(x) = 7.159195
+iteration: 109
+	f(x) = 7.151428
+iteration: 110
+	f(x) = 7.147313
+iteration: 111
+	f(x) = 7.145656
+iteration: 112
+	f(x) = 7.140562
+iteration: 113
+	f(x) = 7.137892
+iteration: 114
+	f(x) = 7.131733
+iteration: 115
+	f(x) = 7.130920
+iteration: 116
+	f(x) = 7.443347
+iteration: 117
+	f(x) = 7.126752
+iteration: 118
+	f(x) = 7.127463
+iteration: 119
+	f(x) = 7.126766
+iteration: 120
+	f(x) = 7.127090
+iteration: 121
+	f(x) = 7.130147
+iteration: 122
+	f(x) = 7.127139
+iteration: 123
+	f(x) = 7.127549
+iteration: 124
+	f(x) = 7.126485
+iteration: 125
+	f(x) = 7.126710
+iteration: 126
+	f(x) = 7.126936
+iteration: 127
+	f(x) = 7.126195
+iteration: 128
+	f(x) = 7.126518
+iteration: 129
+	f(x) = 7.128549
+iteration: 130
+	f(x) = 7.126122
+iteration: 131
+	f(x) = 7.126598
+iteration: 132
+	f(x) = 7.126024
+iteration: 133
+	f(x) = 7.126531
+iteration: 134
+	f(x) = 7.126550
+iteration: 135
+	f(x) = 7.126467
+iteration: 136
+	f(x) = 7.126411
+iteration: 137
+	f(x) = 7.126583
+iteration: 138
+	f(x) = 7.126661
+iteration: 139
+	f(x) = 7.125966
+iteration: 140
+	f(x) = 7.126695
+iteration: 141
+	f(x) = 7.126346
+iteration: 142
+	f(x) = 7.126224
+iteration: 143
+	f(x) = 7.126099
+iteration: 144
+	f(x) = 7.126644
+iteration: 145
+	f(x) = 7.126271
+iteration: 146
+	f(x) = 7.126221
+iteration: 147
+	f(x) = 7.126190
+iteration: 148
+	f(x) = 7.126557
+iteration: 149
+	f(x) = 7.126748
+iteration: 150
+	f(x) = 7.126317
+iteration: 151
+	f(x) = 7.126397
+iteration: 152
+	f(x) = 7.126027
+iteration: 153
+	f(x) = 7.125827
+iteration: 154
+	f(x) = 7.126282
+iteration: 155
+	f(x) = 7.125797
+iteration: 156
+	f(x) = 7.126431
+iteration: 157
+	f(x) = 7.126240
+iteration: 158
+	f(x) = 7.126289
+iteration: 159
+	f(x) = 7.126254
+iteration: 160
+	f(x) = 7.126334
+iteration: 161
+	f(x) = 7.126431
+iteration: 162
+	f(x) = 7.126523
+iteration: 163
+	f(x) = 7.126479
+iteration: 164
+	f(x) = 7.126490
+iteration: 165
+	f(x) = 7.126341
+iteration: 166
+	f(x) = 7.126281
+iteration: 167
+	f(x) = 7.126488
+iteration: 168
+	f(x) = 7.126619
+iteration: 169
+	f(x) = 7.126187
+iteration: 170
+	f(x) = 7.126087
+iteration: 171
+	f(x) = 7.126390
+iteration: 172
+	f(x) = 7.126317
+iteration: 173
+	f(x) = 7.126744
+iteration: 174
+	f(x) = 7.126314
+iteration: 175
+	f(x) = 7.126155
+iteration: 176
+	f(x) = 7.126494
+iteration: 177
+	f(x) = 7.126473
+iteration: 178
+	f(x) = 7.126446
+iteration: 179
+	f(x) = 7.126021
+iteration: 180
+	f(x) = 7.126077
+iteration: 181
+	f(x) = 7.126324
+iteration: 182
+	f(x) = 7.126569
+iteration: 183
+	f(x) = 7.126110
+iteration: 184
+	f(x) = 7.126100
+iteration: 185
+	f(x) = 7.126243
+iteration: 186
+	f(x) = 7.126316
+iteration: 187
+	f(x) = 7.126405
+iteration: 188
+	f(x) = 7.126009
+iteration: 189
+Called from: approx(c(15, 25), c(a_high_15, a_high_25), temperature)
+[1]  7.20  6.90 -4.18

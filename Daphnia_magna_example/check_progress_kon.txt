@@ -1,54 +1,19 @@
 Forward search begins... 
-Calculating PL for parameter  kon  and iter =  1 .  step = 0.020945 kon  =  6.963772 => Likelihood =  6.590468 
-Calculating PL for parameter  kon  and iter =  2 .  step = 0.01871724 kon  =  6.982489 => Likelihood =  6.703138 
-Calculating PL for parameter  kon  and iter =  3 .  step = 0.02015461 kon  =  7.002644 => Likelihood =  6.735762 
-Calculating PL for parameter  kon  and iter =  4 .  step = 0.01990742 kon  =  7.022551 => Likelihood =  6.767173 
-Calculating PL for parameter  kon  and iter =  5 .  step = 0.0197884 kon  =  7.042339 => Likelihood =  6.800843 
-Calculating PL for parameter  kon  and iter =  6 .  step = 0.01939473 kon  =  7.061734 => Likelihood =  6.563804 
-Calculating PL for parameter  kon  and iter =  7 .  step = 0.01868062 kon  =  7.080415 => Likelihood =  6.868763 
-Calculating PL for parameter  kon  and iter =  8 .  step = 0.01910176 kon  =  7.099517 => Likelihood =  6.955708 
-Calculating PL for parameter  kon  and iter =  9 .  step = 0.01539086 kon  =  7.114907 => Likelihood =  6.957266 
-Calculating PL for parameter  kon  and iter =  10 .  step = 0.01912007 kon  =  7.134027 => Likelihood =  6.860266 
-Calculating PL for parameter  kon  and iter =  11 .  step = 0.01841207 kon  =  7.15244 => Likelihood =  6.952551 
-Calculating PL for parameter  kon  and iter =  12 .  step = 0.01598595 kon  =  7.168425 => Likelihood =  7.356952 
-Calculating PL for parameter  kon  and iter =  13 .  step = 0.01611298 kon  =  7.184538 => Likelihood =  7.322801 
-Calculating PL for parameter  kon  and iter =  14 .  step = 0.01670005 kon  =  7.201239 => Likelihood =  7.282824 
-Calculating PL for parameter  kon  and iter =  15 .  step = 0.01733748 kon  =  7.218576 => Likelihood =  7.222077 
-Calculating PL for parameter  kon  and iter =  16 .  step = 0.01742102 kon  =  7.235997 => Likelihood =  7.197035 
-Calculating PL for parameter  kon  and iter =  17 .  step = 0.01738669 kon  =  7.253384 => Likelihood =  7.156716 
-Calculating PL for parameter  kon  and iter =  18 .  step = 0.01768881 kon  =  7.271073 => Likelihood =  7.212552 
-Calculating PL for parameter  kon  and iter =  19 .  step = 0.01836629 kon  =  7.289439 => Likelihood =  6.958138 
-Calculating PL for parameter  kon  and iter =  20 .  step = 0.01895528 kon  =  7.308394 => Likelihood =  6.918361 
-Calculating PL for parameter  kon  and iter =  21 .  step = 0.0192574 kon  =  7.327651 => Likelihood =  6.877824 
-Calculating PL for parameter  kon  and iter =  22 .  step = 0.01858907 kon  =  7.346241 => Likelihood =  6.840561 
-Calculating PL for parameter  kon  and iter =  23 .  step = 0.01807333 kon  =  7.364314 => Likelihood =  6.901428 
-Calculating PL for parameter  kon  and iter =  24 .  step = 0.01862569 kon  =  7.38294 => Likelihood =  6.879801 
-Calculating PL for parameter  kon  and iter =  25 .  step = 0.01867147 kon  =  7.401611 => Likelihood =  6.880149 
-Forward search ended after  25 iterations. 
+Calculating PL for parameter  kon  and iter =  1 .  step = 0.0210274 kon  =  6.966855 => Likelihood =  7.067855 
+Calculating PL for parameter  kon  and iter =  2 .  step = 0.01406794 kon  =  6.980923 => Likelihood =  7.390194 
+Calculating PL for parameter  kon  and iter =  3 .  step = 0.01798178 kon  =  6.998905 => Likelihood =  7.826488 
+Calculating PL for parameter  kon  and iter =  4 .  step = 0.00934701 kon  =  7.008252 => Likelihood =  8.210204 
+Calculating PL for parameter  kon  and iter =  5 .  step = 0.007008252 kon  =  7.01526 => Likelihood =  8.327044 
+Calculating PL for parameter  kon  and iter =  6 .  step = 0.00701526 kon  =  7.022276 => Likelihood =  8.765078 
+Calculating PL for parameter  kon  and iter =  7 .  step = 0.007022276 kon  =  7.029298 => Likelihood =  9.320253 
+Calculating PL for parameter  kon  and iter =  8 .  step = 0.007029298 kon  =  7.036327 => Likelihood =  9.847973 
+Calculating PL for parameter  kon  and iter =  9 .  step = 0.007036327 kon  =  7.043364 => Likelihood =  10.57905 
+Forward search ended after  9 iterations. 
 Backward search begins... 
-Calculating PL for parameter  kon  and iter =  1 .  step = 0.020945 ,  kon  =  6.921882 => Likelihood =  6.809138 
-Calculating PL for parameter  kon  and iter =  2 .  step = 0.01924824 ,  kon  =  6.902633 => Likelihood =  6.808289 
-Calculating PL for parameter  kon  and iter =  3 .  step = 0.01924824 ,  kon  =  6.883385 => Likelihood =  6.807408 
-Calculating PL for parameter  kon  and iter =  4 .  step = 0.01930318 ,  kon  =  6.864082 => Likelihood =  6.80648 
-Calculating PL for parameter  kon  and iter =  5 .  step = 0.01929402 ,  kon  =  6.844788 => Likelihood =  6.805516 
-Calculating PL for parameter  kon  and iter =  6 .  step = 0.01924824 ,  kon  =  6.82554 => Likelihood =  6.804508 
-Calculating PL for parameter  kon  and iter =  7 .  step = 0.01932149 ,  kon  =  6.806218 => Likelihood =  6.803443 
-Calculating PL for parameter  kon  and iter =  8 .  step = 0.01927571 ,  kon  =  6.786943 => Likelihood =  6.802311 
-Calculating PL for parameter  kon  and iter =  9 .  step = 0.01931233 ,  kon  =  6.76763 => Likelihood =  6.801137 
-Calculating PL for parameter  kon  and iter =  10 .  step = 0.01930318 ,  kon  =  6.748327 => Likelihood =  6.800533 
-Calculating PL for parameter  kon  and iter =  11 .  step = 0.01931233 ,  kon  =  6.729015 => Likelihood =  6.799884 
-Calculating PL for parameter  kon  and iter =  12 .  step = 0.01933064 ,  kon  =  6.709684 => Likelihood =  6.80146 
-Calculating PL for parameter  kon  and iter =  13 .  step = 0.01932149 ,  kon  =  6.690363 => Likelihood =  6.80038 
-Calculating PL for parameter  kon  and iter =  14 .  step = 0.01932149 ,  kon  =  6.671041 => Likelihood =  6.799229 
-Calculating PL for parameter  kon  and iter =  15 .  step = 0.01934895 ,  kon  =  6.651692 => Likelihood =  6.797995 
-Calculating PL for parameter  kon  and iter =  16 .  step = 0.01936726 ,  kon  =  6.632325 => Likelihood =  6.796685 
-Calculating PL for parameter  kon  and iter =  17 .  step = 0.01933064 ,  kon  =  6.612994 => Likelihood =  6.795303 
-Calculating PL for parameter  kon  and iter =  18 .  step = 0.01936726 ,  kon  =  6.593627 => Likelihood =  6.793822 
-Calculating PL for parameter  kon  and iter =  19 .  step = 0.01939473 ,  kon  =  6.574232 => Likelihood =  6.792258 
-Calculating PL for parameter  kon  and iter =  20 .  step = 0.01940388 ,  kon  =  6.554828 => Likelihood =  6.78733 
-Calculating PL for parameter  kon  and iter =  21 .  step = 0.01939473 ,  kon  =  6.535434 => Likelihood =  6.785486 
-Calculating PL for parameter  kon  and iter =  22 .  step = 0.01939473 ,  kon  =  6.516039 => Likelihood =  6.783547 
-Calculating PL for parameter  kon  and iter =  23 .  step = 0.01945881 ,  kon  =  6.49658 => Likelihood =  6.7815 
-Calculating PL for parameter  kon  and iter =  24 .  step = 0.0194405 ,  kon  =  6.47714 => Likelihood =  6.779359 
-Calculating PL for parameter  kon  and iter =  25 .  step = 0.01945881 ,  kon  =  6.457681 => Likelihood =  6.777115 
-Backward search ended after  25 iterations. 
+Calculating PL for parameter  kon  and iter =  1 .  step = 0.0210274 ,  kon  =  6.924801 => Likelihood =  7.053482 
+Calculating PL for parameter  kon  and iter =  2 .  step = 0.0208443 ,  kon  =  6.903956 => Likelihood =  7.780447 
+Calculating PL for parameter  kon  and iter =  3 .  step = 0.01780325 ,  kon  =  6.886153 => Likelihood =  8.847093 
+Calculating PL for parameter  kon  and iter =  4 .  step = 0.008386002 ,  kon  =  6.877767 => Likelihood =  9.289599 
+Calculating PL for parameter  kon  and iter =  5 .  step = 0.006877767 ,  kon  =  6.870889 => Likelihood =  10.05088 
+Calculating PL for parameter  kon  and iter =  6 .  step = 0.006870889 ,  kon  =  6.864018 => Likelihood =  10.50098 
+Backward search ended after  6 iterations. 

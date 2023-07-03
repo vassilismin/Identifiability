@@ -1,40 +1,54 @@
 Forward search begins... 
-Calculating PL for parameter  C_prot_init  and iter =  1 .  step = 1.369341e-06 C_prot_init  =  0.0001216727 => Likelihood =  6.503258 
-Calculating PL for parameter  C_prot_init  and iter =  2 .  step = 1.403968e-06 C_prot_init  =  0.0001230767 => Likelihood =  6.501515 
-Calculating PL for parameter  C_prot_init  and iter =  3 .  step = 1.425751e-06 C_prot_init  =  0.0001245024 => Likelihood =  6.500143 
-Calculating PL for parameter  C_prot_init  and iter =  4 .  step = 1.443327e-06 C_prot_init  =  0.0001259458 => Likelihood =  6.499142 
-Calculating PL for parameter  C_prot_init  and iter =  5 .  step = 1.460957e-06 C_prot_init  =  0.0001274067 => Likelihood =  6.500516 
-Calculating PL for parameter  C_prot_init  and iter =  6 .  step = 1.404608e-06 C_prot_init  =  0.0001288113 => Likelihood =  6.500383 
-Calculating PL for parameter  C_prot_init  and iter =  7 .  step = 1.519044e-06 C_prot_init  =  0.0001303304 => Likelihood =  6.438501 
-Calculating PL for parameter  C_prot_init  and iter =  8 .  step = 1.673146e-06 C_prot_init  =  0.0001320035 => Likelihood =  6.432354 
-Calculating PL for parameter  C_prot_init  and iter =  9 .  step = 1.693068e-06 C_prot_init  =  0.0001336966 => Likelihood =  6.433111 
-Calculating PL for parameter  C_prot_init  and iter =  10 .  step = 1.701785e-06 C_prot_init  =  0.0001353984 => Likelihood =  6.435562 
-Calculating PL for parameter  C_prot_init  and iter =  11 .  step = 1.726332e-06 C_prot_init  =  0.0001371247 => Likelihood =  6.438347 
-Calculating PL for parameter  C_prot_init  and iter =  12 .  step = 1.727736e-06 C_prot_init  =  0.0001388524 => Likelihood =  6.441536 
-Calculating PL for parameter  C_prot_init  and iter =  13 .  step = 1.753925e-06 C_prot_init  =  0.0001406064 => Likelihood =  6.444912 
-Calculating PL for parameter  C_prot_init  and iter =  14 .  step = 1.755272e-06 C_prot_init  =  0.0001423616 => Likelihood =  6.44866 
-Calculating PL for parameter  C_prot_init  and iter =  15 .  step = 1.773044e-06 C_prot_init  =  0.0001441347 => Likelihood =  6.452692 
-Calculating PL for parameter  C_prot_init  and iter =  16 .  step = 1.787678e-06 C_prot_init  =  0.0001459223 => Likelihood =  6.537145 
-Calculating PL for parameter  C_prot_init  and iter =  17 .  step = 1.586861e-06 C_prot_init  =  0.0001475092 => Likelihood =  6.540548 
-Calculating PL for parameter  C_prot_init  and iter =  18 .  step = 1.590209e-06 C_prot_init  =  0.0001490994 => Likelihood =  6.544136 
-Calculating PL for parameter  C_prot_init  and iter =  19 .  step = 1.592474e-06 C_prot_init  =  0.0001506919 => Likelihood =  6.547903 
-Calculating PL for parameter  C_prot_init  and iter =  20 .  step = 1.588133e-06 C_prot_init  =  0.00015228 => Likelihood =  6.551809 
-Calculating PL for parameter  C_prot_init  and iter =  21 .  step = 1.600066e-06 C_prot_init  =  0.0001538801 => Likelihood =  6.555885 
-Calculating PL for parameter  C_prot_init  and iter =  22 .  step = 1.604803e-06 C_prot_init  =  0.0001554849 => Likelihood =  6.560108 
-Calculating PL for parameter  C_prot_init  and iter =  23 .  step = 1.611783e-06 C_prot_init  =  0.0001570967 => Likelihood =  6.577984 
-Calculating PL for parameter  C_prot_init  and iter =  24 .  step = 1.59783e-06 C_prot_init  =  0.0001586945 => Likelihood =  6.582316 
-Calculating PL for parameter  C_prot_init  and iter =  25 .  step = 1.573209e-06 C_prot_init  =  0.0001602677 => Likelihood =  6.586856 
-Calculating PL for parameter  C_prot_init  and iter =  26 .  step = 1.567975e-06 C_prot_init  =  0.0001618357 => Likelihood =  6.591526 
-Calculating PL for parameter  C_prot_init  and iter =  27 .  step = 1.561039e-06 C_prot_init  =  0.0001633967 => Likelihood =  6.600456 
-Calculating PL for parameter  C_prot_init  and iter =  28 .  step = 1.506963e-06 C_prot_init  =  0.0001649037 => Likelihood =  6.615361 
-Calculating PL for parameter  C_prot_init  and iter =  29 .  step = 1.456505e-06 C_prot_init  =  0.0001663602 => Likelihood =  6.702495 
-Calculating PL for parameter  C_prot_init  and iter =  30 .  step = 1.151221e-06 C_prot_init  =  0.0001675114 => Likelihood =  6.70508 
-Calculating PL for parameter  C_prot_init  and iter =  31 .  step = 1.059626e-06 C_prot_init  =  0.000168571 => Likelihood =  6.714147 
-Calculating PL for parameter  C_prot_init  and iter =  32 .  step = 1.049215e-06 C_prot_init  =  0.0001696203 => Likelihood =  6.723812 
-Calculating PL for parameter  C_prot_init  and iter =  33 .  step = 9.987794e-07 C_prot_init  =  0.000170619 => Likelihood =  6.733168 
-Calculating PL for parameter  C_prot_init  and iter =  34 .  step = 9.538505e-07 C_prot_init  =  0.0001715729 => Likelihood =  6.741891 
-Calculating PL for parameter  C_prot_init  and iter =  35 .  step = 9.070848e-07 C_prot_init  =  0.00017248 => Likelihood =  6.750349 
-Calculating PL for parameter  C_prot_init  and iter =  36 .  step = 8.467209e-07 C_prot_init  =  0.0001733267 => Likelihood =  6.758256 
-Calculating PL for parameter  C_prot_init  and iter =  37 .  step = 7.953694e-07 C_prot_init  =  0.0001741221 => Likelihood =  6.765674 
-Calculating PL for parameter  C_prot_init  and iter =  38 .  step = 7.408278e-07 C_prot_init  =  0.0001748629 => Likelihood =  6.787182 
-Calculating PL for parameter  C_prot_init  and iter =  39 .  step = 1.748629e-10 C_prot_init  =  0.0001748631 => Likelihood =  6.787185 
+Calculating PL for parameter  C_prot_init  and iter =  1 .  step = 0.01217625 C_prot_init  =  -4.138733 => Likelihood =  6.630385 
+Calculating PL for parameter  C_prot_init  and iter =  2 .  step = 0.01210515 C_prot_init  =  -4.126628 => Likelihood =  6.650119 
+Calculating PL for parameter  C_prot_init  and iter =  3 .  step = 0.01201775 C_prot_init  =  -4.11461 => Likelihood =  6.726675 
+Calculating PL for parameter  C_prot_init  and iter =  4 .  step = 0.0098381 C_prot_init  =  -4.104772 => Likelihood =  6.769272 
+Calculating PL for parameter  C_prot_init  and iter =  5 .  step = 0.01170476 C_prot_init  =  -4.093067 => Likelihood =  6.789781 
+Calculating PL for parameter  C_prot_init  and iter =  6 .  step = 0.01153224 C_prot_init  =  -4.081535 => Likelihood =  6.822959 
+Calculating PL for parameter  C_prot_init  and iter =  7 .  step = 0.01133912 C_prot_init  =  -4.070196 => Likelihood =  6.844522 
+Calculating PL for parameter  C_prot_init  and iter =  8 .  step = 0.01143239 C_prot_init  =  -4.058763 => Likelihood =  6.688682 
+Calculating PL for parameter  C_prot_init  and iter =  9 .  step = 0.01144727 C_prot_init  =  -4.047316 => Likelihood =  6.947267 
+Calculating PL for parameter  C_prot_init  and iter =  10 .  step = 0.011041 C_prot_init  =  -4.036275 => Likelihood =  7.009912 
+Calculating PL for parameter  C_prot_init  and iter =  11 .  step = 0.009068492 C_prot_init  =  -4.027207 => Likelihood =  7.178418 
+Calculating PL for parameter  C_prot_init  and iter =  12 .  step = 0.01029371 C_prot_init  =  -4.016913 => Likelihood =  7.193902 
+Calculating PL for parameter  C_prot_init  and iter =  13 .  step = 0.01008758 C_prot_init  =  -4.006825 => Likelihood =  7.209523 
+Calculating PL for parameter  C_prot_init  and iter =  14 .  step = 0.01013178 C_prot_init  =  -3.996693 => Likelihood =  7.406101 
+Calculating PL for parameter  C_prot_init  and iter =  15 .  step = 0.009379196 C_prot_init  =  -3.987314 => Likelihood =  7.098503 
+Calculating PL for parameter  C_prot_init  and iter =  16 .  step = 0.01053318 C_prot_init  =  -3.976781 => Likelihood =  7.510734 
+Calculating PL for parameter  C_prot_init  and iter =  17 .  step = 0.009005121 C_prot_init  =  -3.967776 => Likelihood =  7.5078 
+Calculating PL for parameter  C_prot_init  and iter =  18 .  step = 0.008982663 C_prot_init  =  -3.958793 => Likelihood =  7.553355 
+Calculating PL for parameter  C_prot_init  and iter =  19 .  step = 0.003958793 C_prot_init  =  -3.954835 => Likelihood =  7.417529 
+Calculating PL for parameter  C_prot_init  and iter =  20 .  step = 0.009359885 C_prot_init  =  -3.945475 => Likelihood =  7.424021 
+Calculating PL for parameter  C_prot_init  and iter =  21 .  step = 0.008528766 C_prot_init  =  -3.936946 => Likelihood =  7.542798 
+Calculating PL for parameter  C_prot_init  and iter =  22 .  step = 0.008889394 C_prot_init  =  -3.928056 => Likelihood =  7.532494 
+Calculating PL for parameter  C_prot_init  and iter =  23 .  step = 0.008885532 C_prot_init  =  -3.919171 => Likelihood =  7.522789 
+Calculating PL for parameter  C_prot_init  and iter =  24 .  step = 0.008944611 C_prot_init  =  -3.910226 => Likelihood =  7.506344 
+Calculating PL for parameter  C_prot_init  and iter =  25 .  step = 0.008943896 C_prot_init  =  -3.901282 => Likelihood =  7.513474 
+Forward search ended after  25 iterations. 
+Backward search begins... 
+Calculating PL for parameter  C_prot_init  and iter =  1 .  step = 0.01217625 ,  C_prot_init  =  -4.163085 => Likelihood =  6.65696 
+Calculating PL for parameter  C_prot_init  and iter =  2 .  step = 0.01203663 ,  C_prot_init  =  -4.175122 => Likelihood =  6.655597 
+Calculating PL for parameter  C_prot_init  and iter =  3 .  step = 0.01204493 ,  C_prot_init  =  -4.187167 => Likelihood =  6.643835 
+Calculating PL for parameter  C_prot_init  and iter =  4 .  step = 0.01209271 ,  C_prot_init  =  -4.19926 => Likelihood =  6.817908 
+Calculating PL for parameter  C_prot_init  and iter =  5 .  step = 0.01158087 ,  C_prot_init  =  -4.21084 => Likelihood =  6.834194 
+Calculating PL for parameter  C_prot_init  and iter =  6 .  step = 0.01150177 ,  C_prot_init  =  -4.222342 => Likelihood =  6.903288 
+Calculating PL for parameter  C_prot_init  and iter =  7 .  step = 0.01157766 ,  C_prot_init  =  -4.23392 => Likelihood =  6.959807 
+Calculating PL for parameter  C_prot_init  and iter =  8 .  step = 0.01115587 ,  C_prot_init  =  -4.245076 => Likelihood =  7.061561 
+Calculating PL for parameter  C_prot_init  and iter =  9 .  step = 0.01082471 ,  C_prot_init  =  -4.2559 => Likelihood =  7.104491 
+Calculating PL for parameter  C_prot_init  and iter =  10 .  step = 0.01070527 ,  C_prot_init  =  -4.266606 => Likelihood =  7.066761 
+Calculating PL for parameter  C_prot_init  and iter =  11 .  step = 0.01078509 ,  C_prot_init  =  -4.277391 => Likelihood =  7.09633 
+Calculating PL for parameter  C_prot_init  and iter =  12 .  step = 0.01070241 ,  C_prot_init  =  -4.288093 => Likelihood =  7.122595 
+Calculating PL for parameter  C_prot_init  and iter =  13 .  step = 0.01063131 ,  C_prot_init  =  -4.298725 => Likelihood =  7.156769 
+Calculating PL for parameter  C_prot_init  and iter =  14 .  step = 0.01051043 ,  C_prot_init  =  -4.309235 => Likelihood =  7.197528 
+Calculating PL for parameter  C_prot_init  and iter =  15 .  step = 0.0103485 ,  C_prot_init  =  -4.319583 => Likelihood =  7.320693 
+Calculating PL for parameter  C_prot_init  and iter =  16 .  step = 0.009887667 ,  C_prot_init  =  -4.329471 => Likelihood =  7.228556 
+Calculating PL for parameter  C_prot_init  and iter =  17 .  step = 0.01008601 ,  C_prot_init  =  -4.339557 => Likelihood =  7.293867 
+Calculating PL for parameter  C_prot_init  and iter =  18 .  step = 0.01005697 ,  C_prot_init  =  -4.349614 => Likelihood =  7.402806 
+Calculating PL for parameter  C_prot_init  and iter =  19 .  step = 0.009580324 ,  C_prot_init  =  -4.359194 => Likelihood =  7.454994 
+Calculating PL for parameter  C_prot_init  and iter =  20 .  step = 0.009387922 ,  C_prot_init  =  -4.368582 => Likelihood =  7.509383 
+Calculating PL for parameter  C_prot_init  and iter =  21 .  step = 0.009144166 ,  C_prot_init  =  -4.377726 => Likelihood =  7.625583 
+Calculating PL for parameter  C_prot_init  and iter =  22 .  step = 0.008660944 ,  C_prot_init  =  -4.386387 => Likelihood =  7.651056 
+Calculating PL for parameter  C_prot_init  and iter =  23 .  step = 0.008560094 ,  C_prot_init  =  -4.394948 => Likelihood =  7.82929 
+Calculating PL for parameter  C_prot_init  and iter =  24 .  step = 0.007732551 ,  C_prot_init  =  -4.40268 => Likelihood =  7.878903 
+Calculating PL for parameter  C_prot_init  and iter =  25 .  step = 0.007368347 ,  C_prot_init  =  -4.410048 => Likelihood =  7.925586 
+Backward search ended after  25 iterations. 

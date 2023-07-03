@@ -2,7 +2,8 @@ library(deSolve)
 library(ggplot2)
 library(parallel)
 library(gridExtra)
-setwd('C:/Users/vassi/Documents/GitHub/Identifiability')
+setwd('C:/Users/vassi/Documents/GitHub/Identifiability/Daphnia_magna_example')
+
 #=================#
 # Model functions #
 #=================#
@@ -187,9 +188,9 @@ general_obj_func <- function(x, PFAS_data, Cwater, age,
   # Iterate over number of distinct temperature used in the experiment
   ku <- x[1]
   kon <- x[2]
-  Ka <- x[3]
-  ke <- 7.728766 #x[4]
-  C_prot_init <- -4.189729 #x[5]
+  Ka <- 7.681146 # x[3]
+  ke <- 7.728766 #x[3]
+  C_prot_init <- x[3]
   
   # Iterate over number of distinct temperature used in the experiment
   for (temp_iter in 1:length(temperatures)){
@@ -256,8 +257,9 @@ updated_obj_func <- function(x, constant_theta, constant_theta_name, params_name
     assign(params_names[k], x[k])
   }
   
+  Ka <- 7.681146
   ke <- 7.728766
-  C_prot_init <- -4.189729
+  #C_prot_init <- -4.189729
   
   # Iterate over number of distinct temperature used in the experiment
   for (temp_iter in 1:length(temperatures)){
@@ -324,7 +326,7 @@ profile_likelihood <- function(X){
   # Load the experimental data
   data_ls <- openxlsx::read.xlsx ('C:/Users/vassi/Documents/GitHub/PFAS_biokinetics_models/D.Magna/Wang_2023/Wang_data_reduced2.xlsx', sheet = 'PFDoA')
   data_plot <- openxlsx::read.xlsx ('C:/Users/vassi/Documents/GitHub/PFAS_biokinetics_models/D.Magna/Wang_2023/Wang_data.xlsx', sheet = 'PFDoA')
-  errors <- read.csv('C:/Users/vassi/Documents/GitHub/Identifiability/PFDoA_errors.csv')
+  errors <- read.csv('C:/Users/vassi/Documents/GitHub/Identifiability/Daphnia_magna_example/PFDoA_errors.csv')
   
   
   
@@ -547,7 +549,7 @@ profile_likelihood <- function(X){
 # Load the experimental data
 data_ls <- openxlsx::read.xlsx ('C:/Users/vassi/Documents/GitHub/PFAS_biokinetics_models/D.Magna/Wang_2023/Wang_data_reduced2.xlsx', sheet = 'PFDoA')
 data_plot <- openxlsx::read.xlsx ('C:/Users/vassi/Documents/GitHub/PFAS_biokinetics_models/D.Magna/Wang_2023/Wang_data.xlsx', sheet = 'PFDoA')
-errors <- read.csv('C:/Users/vassi/Documents/GitHub/Identifiability/PFDoA_errors.csv')
+errors <- read.csv('C:/Users/vassi/Documents/GitHub/Identifiability/Daphnia_magna_example/PFDoA_errors.csv')
 
 # the selected settings for the optimizer
 opts <- list( "algorithm" = "NLOPT_LN_NELDERMEAD" ,#"NLOPT_LN_SBPLX", #"NLOPT_LN_BOBYQA" #"NLOPT_LN_COBYLA"
@@ -566,16 +568,12 @@ temperatures <- c(16, 20, 24) #experiment temperature in oC
 
 MW <- 614 # molecular weight of PFDoA
 
-#x0 <- c(7.434352e+00, 6.109240e+00, 6.825681e+00, 7.551428e+00, 1.935566e-05)
-#x0 <- c(7.020703 , 7.367442 , 7.457980, 7.178138, 2.545041e-05)
-#x0 <- c(7.102776, 7.102683, 7.850294, 7.459273, 3.485151e-05)
-#x0 <- c(7.180861, 7.034985, 7.777999, 7.647371, 5.231248e-05)
 #x0 <- c(7.228657e+00, 6.980294e+00, 7.718556e+00, 7.692513e+00, 5.928412e-05)
-x0 <- c(7.2, 6.9, 7.6)#, 7.697054, 7.729635, log10(6.275335e-05))
+x0 <- c(7.264, 6.942, -4.189)#, 7.697054, 7.729635, log10(6.275335e-05))
 global_optimization <- nloptr::nloptr(x0 = x0,
                                       eval_f = general_obj_func,
-                                      lb	=  c(6,6,6), #,7,7, log10(1e-05)),
-                                      ub =   c(8,8,8), #, 8, 8,  log10(20e-05)),
+                                      lb	=  c(6,6,-5), #,7,7, log10(1e-05)),
+                                      ub =   c(8,8,-3.69), #, 8, 8,  log10(20e-05)),
                                       opts = opts,
                                       PFAS_data = data_ls,
                                       Cwater = Cwater,
@@ -587,17 +585,17 @@ global_optimization <- nloptr::nloptr(x0 = x0,
 ###############################
 
 optimized_params <- global_optimization$solution
-names(optimized_params) <- c('ku', 'kon', 'Ka') #, 'ke', 'C_prot_init')
+names(optimized_params) <- c('ku', 'kon', 'C_prot_init') #, 'ke', 'C_prot_init')
 
 thetas <- optimized_params
 thetas_names <- names(optimized_params)
 
 # lower bounds of parameters
 #lb <- c(4, 4, 5, 6, 1e-06) 
-lb <- c(4,4,4) #,3,3, -8)
+lb <- c(4,4,-7) #,3,3, -8)
 # upper bounds of parameters
 #ub <- c(8, 9, 8.5, 8.5, 1e-04) 
-ub <- c(10,10,10)#, 10, 10,  2)
+ub <- c(10,10,-3)#, 10, 10,  2)
 
 # prepare the input for parallel processing
 X <- vector("list", 3)
