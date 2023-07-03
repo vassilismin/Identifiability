@@ -188,8 +188,8 @@ general_obj_func <- function(x, PFAS_data, Cwater, age,
   ku <- x[1]
   kon <- x[2]
   Ka <- x[3]
-  ke <- x[4]
-  C_prot_init <- x[5]
+  ke <- 7.728766 #x[4]
+  C_prot_init <- -4.189729 #x[5]
   
   # Iterate over number of distinct temperature used in the experiment
   for (temp_iter in 1:length(temperatures)){
@@ -217,7 +217,7 @@ general_obj_func <- function(x, PFAS_data, Cwater, age,
                                         y = inits,
                                         parms = params,
                                         method="lsodes",
-                                        rtol = 1e-6, atol = 1e-6))
+                                        rtol = 1e-5, atol = 1e-5))
     
     if(sum(round(solution$time,2) %in% exp_time) == length(exp_time)){
       results <- solution[which(round(solution$time,2) %in% exp_time), 'C_tot']
@@ -255,6 +255,9 @@ updated_obj_func <- function(x, constant_theta, constant_theta_name, params_name
   for (k in 1:length(x)) {
     assign(params_names[k], x[k])
   }
+  
+  ke <- 7.728766
+  C_prot_init <- -4.189729
   
   # Iterate over number of distinct temperature used in the experiment
   for (temp_iter in 1:length(temperatures)){
@@ -378,7 +381,7 @@ profile_likelihood <- function(X){
                 "maxeval" = N_iter,
                 "print_level" = 0)
   
-  opts_theta_step <- list( "algorithm" = 'NLOPT_LN_BOBYQA', #"NLOPT_LN_NELDERMEAD", #"NLOPT_LN_SBPLX", #"NLOPT_LN_BOBYQA" #"NLOPT_LN_COBYLA"
+  opts_theta_step <- list( "algorithm" = 'NLOPT_LN_SBPLX', #"NLOPT_LN_NELDERMEAD", #"NLOPT_LN_SBPLX", #"NLOPT_LN_BOBYQA" #"NLOPT_LN_COBYLA"
                            "xtol_rel" = 1e-05, 
                            "ftol_rel" = 1e-05,
                            "ftol_abs" = 0.0,
@@ -547,9 +550,9 @@ data_plot <- openxlsx::read.xlsx ('C:/Users/vassi/Documents/GitHub/PFAS_biokinet
 errors <- read.csv('C:/Users/vassi/Documents/GitHub/Identifiability/PFDoA_errors.csv')
 
 # the selected settings for the optimizer
-opts <- list( "algorithm" = "NLOPT_LN_SBPLX", #"NLOPT_LN_NELDERMEAD" ,#"NLOPT_LN_SBPLX", #"NLOPT_LN_BOBYQA" #"NLOPT_LN_COBYLA"
-              "xtol_rel" = 1e-08, 
-              "ftol_rel" = 1e-08,
+opts <- list( "algorithm" = "NLOPT_LN_NELDERMEAD" ,#"NLOPT_LN_SBPLX", #"NLOPT_LN_BOBYQA" #"NLOPT_LN_COBYLA"
+              "xtol_rel" = 0, 
+              "ftol_rel" = 0,
               "ftol_abs" = 0,
               "xtol_abs" = 0 ,
               "maxeval" = 3000,
@@ -563,44 +566,44 @@ temperatures <- c(16, 20, 24) #experiment temperature in oC
 
 MW <- 614 # molecular weight of PFDoA
 
-x0 <- c(-1, 2, 5, -3, -6)
-set.seed(13)
-x0 <- runif(5, min = c(-2, 1, 3, -2, -9), max = c( 3, 5, 6, 0, -2))
-#x0 <- c(2.591115, 4, 4.340183, 0.9271614, -3)
-#x0 <- c(2.353689, 17.09018, 4.793657, 0.1949285, -3.993427)
-global_optimization<- nloptr::nloptr(x0 = x0,
-                                     eval_f = general_obj_func,
-                                     #       ku, kon, Ka, ke, C_init_prot
-                                     lb	=  c(-2, 1, 3, -2, -9),
-                                     ub =  c( 3, 5, 6, 0, -2),
-                                     opts = opts,
-                                     PFAS_data = data_ls,
-                                     Cwater = Cwater,
-                                     age = age ,
-                                     temperatures = temperatures,
-                                     MW = MW,
-                                     weights_values = errors)
+#x0 <- c(7.434352e+00, 6.109240e+00, 6.825681e+00, 7.551428e+00, 1.935566e-05)
+#x0 <- c(7.020703 , 7.367442 , 7.457980, 7.178138, 2.545041e-05)
+#x0 <- c(7.102776, 7.102683, 7.850294, 7.459273, 3.485151e-05)
+#x0 <- c(7.180861, 7.034985, 7.777999, 7.647371, 5.231248e-05)
+#x0 <- c(7.228657e+00, 6.980294e+00, 7.718556e+00, 7.692513e+00, 5.928412e-05)
+x0 <- c(7.2, 6.9, 7.6)#, 7.697054, 7.729635, log10(6.275335e-05))
+global_optimization <- nloptr::nloptr(x0 = x0,
+                                      eval_f = general_obj_func,
+                                      lb	=  c(6,6,6), #,7,7, log10(1e-05)),
+                                      ub =   c(8,8,8), #, 8, 8,  log10(20e-05)),
+                                      opts = opts,
+                                      PFAS_data = data_ls,
+                                      Cwater = Cwater,
+                                      age = age ,
+                                      temperatures = temperatures,
+                                      MW = MW,
+                                      weights_values = errors)
 
 ###############################
 
 optimized_params <- global_optimization$solution
-names(optimized_params) <- c('ku', 'kon', 'Ka', 'ke', 'C_prot_init')
+names(optimized_params) <- c('ku', 'kon', 'Ka') #, 'ke', 'C_prot_init')
 
 thetas <- optimized_params
 thetas_names <- names(optimized_params)
 
 # lower bounds of parameters
 #lb <- c(4, 4, 5, 6, 1e-06) 
-lb <- c(3,3,3,3, -8)
+lb <- c(4,4,4) #,3,3, -8)
 # upper bounds of parameters
 #ub <- c(8, 9, 8.5, 8.5, 1e-04) 
-ub <- c(10,10, 10, 10,  2)
+ub <- c(10,10,10)#, 10, 10,  2)
 
 # prepare the input for parallel processing
-X <- vector("list", 5)
-for(i in 1:5){
+X <- vector("list", 3)
+for(i in 1:length(X)){
   X[[i]] <- list(index=i, thetas=thetas, thetas_names=thetas_names,
-                 lb=lb, ub=ub, N_samples=100, N_iter=250,
+                 lb=lb, ub=ub, N_samples=25, N_iter=250,
                  alpha=0.95, df=1,
                  global_optimum = global_optimization$objective,
                  q = 0.5,
@@ -609,7 +612,7 @@ for(i in 1:5){
 }
 
 start.time <- Sys.time()
-cluster <- makeCluster(5)
+cluster <- makeCluster(3)
 clusterExport(cl=cluster, c("Size_estimation","dry_weight_estimation", "ode_func",
                             "WSSR", "updated_obj_func","optimized_params", "global_optimization",
                             "general_obj_func"))
@@ -660,4 +663,4 @@ for (i in 1:length(output)) {
   plot_list[[i]] <- plot
 }
 # Arrange and print the plots in a grid
-grid.arrange(grobs = plot_list, nrow = 3)
+grid.arrange(grobs = plot_list, nrow = 1)

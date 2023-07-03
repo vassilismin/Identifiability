@@ -1,0 +1,54 @@
+Forward search begins... 
+Calculating PL for parameter  Ka  and iter =  1 .  step = 0.01875386 Ka  =  7.699888 => Likelihood =  6.58669 
+Calculating PL for parameter  Ka  and iter =  2 .  step = 0.0174874 Ka  =  7.717375 => Likelihood =  6.697231 
+Calculating PL for parameter  Ka  and iter =  3 .  step = 0.01833883 Ka  =  7.735714 => Likelihood =  6.726511 
+Calculating PL for parameter  Ka  and iter =  4 .  step = 0.01819235 Ka  =  7.753906 => Likelihood =  6.756324 
+Calculating PL for parameter  Ka  and iter =  5 .  step = 0.0180184 Ka  =  7.771925 => Likelihood =  6.784783 
+Calculating PL for parameter  Ka  and iter =  6 .  step = 0.01794516 Ka  =  7.78987 => Likelihood =  6.745726 
+Calculating PL for parameter  Ka  and iter =  7 .  step = 0.02175066 Ka  =  7.81162 => Likelihood =  6.85382 
+Calculating PL for parameter  Ka  and iter =  8 .  step = 0.01732489 Ka  =  7.828945 => Likelihood =  6.885338 
+Calculating PL for parameter  Ka  and iter =  9 .  step = 0.01707999 Ka  =  7.846025 => Likelihood =  6.976099 
+Calculating PL for parameter  Ka  and iter =  10 .  step = 0.01661766 Ka  =  7.862643 => Likelihood =  6.924644 
+Calculating PL for parameter  Ka  and iter =  11 .  step = 0.01614502 Ka  =  7.878788 => Likelihood =  6.883998 
+Calculating PL for parameter  Ka  and iter =  12 .  step = 0.01673209 Ka  =  7.89552 => Likelihood =  7.36036 
+Calculating PL for parameter  Ka  and iter =  13 .  step = 0.01453313 Ka  =  7.910053 => Likelihood =  7.347379 
+Calculating PL for parameter  Ka  and iter =  14 .  step = 0.01491965 Ka  =  7.924973 => Likelihood =  7.311925 
+Calculating PL for parameter  Ka  and iter =  15 .  step = 0.01489934 Ka  =  7.939872 => Likelihood =  7.277204 
+Calculating PL for parameter  Ka  and iter =  16 .  step = 0.01518372 Ka  =  7.955056 => Likelihood =  7.222615 
+Calculating PL for parameter  Ka  and iter =  17 .  step = 0.0152255 Ka  =  7.970282 => Likelihood =  7.203446 
+Calculating PL for parameter  Ka  and iter =  18 .  step = 0.01538972 Ka  =  7.985671 => Likelihood =  7.168543 
+Calculating PL for parameter  Ka  and iter =  19 .  step = 0.01583489 Ka  =  8.001506 => Likelihood =  7.141108 
+Calculating PL for parameter  Ka  and iter =  20 .  step = 0.01543549 Ka  =  8.016942 => Likelihood =  6.980482 
+Calculating PL for parameter  Ka  and iter =  21 .  step = 0.01724021 Ka  =  8.034182 => Likelihood =  6.944816 
+Calculating PL for parameter  Ka  and iter =  22 .  step = 0.0170777 Ka  =  8.05126 => Likelihood =  6.909839 
+Calculating PL for parameter  Ka  and iter =  23 .  step = 0.0173432 Ka  =  8.068603 => Likelihood =  6.874075 
+Calculating PL for parameter  Ka  and iter =  24 .  step = 0.0176911 Ka  =  8.086294 => Likelihood =  6.843558 
+Calculating PL for parameter  Ka  and iter =  25 .  step = 0.0166291 Ka  =  8.102923 => Likelihood =  6.903472 
+Forward search ended after  25 iterations. 
+Backward search begins... 
+Calculating PL for parameter  Ka  and iter =  1 .  step = 0.01875386 ,  Ka  =  7.66238 => Likelihood =  6.809171 
+Calculating PL for parameter  Ka  and iter =  2 .  step = 0.01768195 ,  Ka  =  7.644698 => Likelihood =  6.808404 
+Calculating PL for parameter  Ka  and iter =  3 .  step = 0.01771628 ,  Ka  =  7.626982 => Likelihood =  6.807601 
+Calculating PL for parameter  Ka  and iter =  4 .  step = 0.01771628 ,  Ka  =  7.609265 => Likelihood =  6.806755 
+Calculating PL for parameter  Ka  and iter =  5 .  step = 0.01769568 ,  Ka  =  7.59157 => Likelihood =  6.805884 
+Calculating PL for parameter  Ka  and iter =  6 .  step = 0.01770598 ,  Ka  =  7.573864 => Likelihood =  6.804961 
+Calculating PL for parameter  Ka  and iter =  7 .  step = 0.01772543 ,  Ka  =  7.556138 => Likelihood =  6.804009 
+Calculating PL for parameter  Ka  and iter =  8 .  step = 0.01772543 ,  Ka  =  7.538413 => Likelihood =  6.803006 
+Calculating PL for parameter  Ka  and iter =  9 .  step = 0.01774374 ,  Ka  =  7.520669 => Likelihood =  6.801962 
+Calculating PL for parameter  Ka  and iter =  10 .  step = 0.0177529 ,  Ka  =  7.502916 => Likelihood =  6.800995 
+Calculating PL for parameter  Ka  and iter =  11 .  step = 0.01776205 ,  Ka  =  7.485154 => Likelihood =  6.80046 
+Calculating PL for parameter  Ka  and iter =  12 .  step = 0.01778952 ,  Ka  =  7.467365 => Likelihood =  6.799839 
+Calculating PL for parameter  Ka  and iter =  13 .  step = 0.01773459 ,  Ka  =  7.44963 => Likelihood =  6.801494 
+Calculating PL for parameter  Ka  and iter =  14 .  step = 0.01776205 ,  Ka  =  7.431868 => Likelihood =  6.800494 
+Calculating PL for parameter  Ka  and iter =  15 .  step = 0.01776205 ,  Ka  =  7.414106 => Likelihood =  6.799442 
+Calculating PL for parameter  Ka  and iter =  16 .  step = 0.01772543 ,  Ka  =  7.396381 => Likelihood =  6.798326 
+Calculating PL for parameter  Ka  and iter =  17 .  step = 0.01778036 ,  Ka  =  7.3786 => Likelihood =  6.797143 
+Calculating PL for parameter  Ka  and iter =  18 .  step = 0.01776205 ,  Ka  =  7.360838 => Likelihood =  6.795901 
+Calculating PL for parameter  Ka  and iter =  19 .  step = 0.01781698 ,  Ka  =  7.343021 => Likelihood =  6.79457 
+Calculating PL for parameter  Ka  and iter =  20 .  step = 0.01776205 ,  Ka  =  7.325259 => Likelihood =  6.793177 
+Calculating PL for parameter  Ka  and iter =  21 .  step = 0.01778952 ,  Ka  =  7.30747 => Likelihood =  6.791708 
+Calculating PL for parameter  Ka  and iter =  22 .  step = 0.01778952 ,  Ka  =  7.28968 => Likelihood =  6.786865 
+Calculating PL for parameter  Ka  and iter =  23 .  step = 0.01784445 ,  Ka  =  7.271836 => Likelihood =  6.785167 
+Calculating PL for parameter  Ka  and iter =  24 .  step = 0.01786276 ,  Ka  =  7.253973 => Likelihood =  6.783344 
+Calculating PL for parameter  Ka  and iter =  25 .  step = 0.01782614 ,  Ka  =  7.236147 => Likelihood =  6.781466 
+Backward search ended after  25 iterations. 
