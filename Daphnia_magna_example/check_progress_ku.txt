@@ -1,54 +1,119 @@
 Forward search begins... 
-Calculating PL for parameter  ku  and iter =  1 .  step = 0.01154697 ku  =  7.237983 => Likelihood =  6.657531 
-Calculating PL for parameter  ku  and iter =  2 .  step = 0.01154325 ku  =  7.249526 => Likelihood =  6.656581 
-Calculating PL for parameter  ku  and iter =  3 .  step = 0.01177571 ku  =  7.261302 => Likelihood =  6.645046 
-Calculating PL for parameter  ku  and iter =  4 .  step = 0.01029185 ku  =  7.271594 => Likelihood =  6.815308 
-Calculating PL for parameter  ku  and iter =  5 .  step = 0.01102041 ku  =  7.282614 => Likelihood =  6.825872 
-Calculating PL for parameter  ku  and iter =  6 .  step = 0.0108991 ku  =  7.293513 => Likelihood =  6.858773 
-Calculating PL for parameter  ku  and iter =  7 .  step = 0.01092513 ku  =  7.304439 => Likelihood =  6.937287 
-Calculating PL for parameter  ku  and iter =  8 .  step = 0.01076377 ku  =  7.315202 => Likelihood =  6.970601 
-Calculating PL for parameter  ku  and iter =  9 .  step = 0.009728381 ku  =  7.324931 => Likelihood =  7.07048 
-Calculating PL for parameter  ku  and iter =  10 .  step = 0.01009301 ku  =  7.335024 => Likelihood =  7.047526 
-Calculating PL for parameter  ku  and iter =  11 .  step = 0.01027454 ku  =  7.345298 => Likelihood =  7.073491 
-Calculating PL for parameter  ku  and iter =  12 .  step = 0.01032948 ku  =  7.355628 => Likelihood =  7.09844 
-Calculating PL for parameter  ku  and iter =  13 .  step = 0.01007642 ku  =  7.365704 => Likelihood =  7.125564 
-Calculating PL for parameter  ku  and iter =  14 .  step = 0.009979433 ku  =  7.375684 => Likelihood =  7.157311 
-Calculating PL for parameter  ku  and iter =  15 .  step = 0.009728095 ku  =  7.385412 => Likelihood =  7.190976 
-Calculating PL for parameter  ku  and iter =  16 .  step = 0.009619663 ku  =  7.395031 => Likelihood =  7.229228 
-Calculating PL for parameter  ku  and iter =  17 .  step = 0.009234502 ku  =  7.404266 => Likelihood =  7.220079 
-Calculating PL for parameter  ku  and iter =  18 .  step = 0.00939064 ku  =  7.413657 => Likelihood =  7.262796 
-Calculating PL for parameter  ku  and iter =  19 .  step = 0.009207823 ku  =  7.422864 => Likelihood =  7.332633 
-Calculating PL for parameter  ku  and iter =  20 .  step = 0.009065488 ku  =  7.43193 => Likelihood =  7.425456 
-Calculating PL for parameter  ku  and iter =  21 .  step = 0.008744342 ku  =  7.440674 => Likelihood =  7.471741 
-Calculating PL for parameter  ku  and iter =  22 .  step = 0.008562526 ku  =  7.449237 => Likelihood =  7.519686 
-Calculating PL for parameter  ku  and iter =  23 .  step = 0.007687347 ku  =  7.456924 => Likelihood =  7.642707 
-Calculating PL for parameter  ku  and iter =  24 .  step = 0.007874886 ku  =  7.464799 => Likelihood =  7.653998 
-Calculating PL for parameter  ku  and iter =  25 .  step = 0.007464799 ku  =  7.472264 => Likelihood =  7.73351 
-Forward search ended after  25 iterations. 
+Calculating PL for parameter  ku  and iter =  1 .  step = 0.01022205 ku  =  7.275126 => Likelihood =  6.54309 
+Calculating PL for parameter  ku  and iter =  2 .  step = 0.01027011 ku  =  7.285396 => Likelihood =  6.65365 
+Calculating PL for parameter  ku  and iter =  3 .  step = 0.01007442 ku  =  7.295471 => Likelihood =  6.658629 
+Calculating PL for parameter  ku  and iter =  4 .  step = 0.01006312 ku  =  7.305534 => Likelihood =  6.665594 
+Calculating PL for parameter  ku  and iter =  5 .  step = 0.009860559 ku  =  7.315394 => Likelihood =  6.674418 
+Calculating PL for parameter  ku  and iter =  6 .  step = 0.00904446 ku  =  7.324439 => Likelihood =  6.788693 
+Calculating PL for parameter  ku  and iter =  7 .  step = 0.009136799 ku  =  7.333576 => Likelihood =  6.695343 
+Calculating PL for parameter  ku  and iter =  8 .  step = 0.009533976 ku  =  7.343109 => Likelihood =  6.704213 
+Calculating PL for parameter  ku  and iter =  9 .  step = 0.009532975 ku  =  7.352642 => Likelihood =  6.700373 
+Calculating PL for parameter  ku  and iter =  10 .  step = 0.009412527 ku  =  7.362055 => Likelihood =  6.71971 
+Calculating PL for parameter  ku  and iter =  11 .  step = 0.009355164 ku  =  7.37141 => Likelihood =  6.719463 
+Calculating PL for parameter  ku  and iter =  12 .  step = 0.009261037 ku  =  7.380671 => Likelihood =  6.736528 
+Calculating PL for parameter  ku  and iter =  13 .  step = 0.008835894 ku  =  7.389507 => Likelihood =  6.799158 
+Calculating PL for parameter  ku  and iter =  14 .  step = 0.008963637 ku  =  7.398471 => Likelihood =  6.814757 
+Calculating PL for parameter  ku  and iter =  15 .  step = 0.008328639 ku  =  7.406799 => Likelihood =  6.735694 
+Calculating PL for parameter  ku  and iter =  16 .  step = 0.008482418 ku  =  7.415282 => Likelihood =  6.872116 
+Calculating PL for parameter  ku  and iter =  17 .  step = 0.008059849 ku  =  7.423342 => Likelihood =  6.903951 
+Calculating PL for parameter  ku  and iter =  18 .  step = 0.00791966 ku  =  7.431261 => Likelihood =  6.937215 
+Calculating PL for parameter  ku  and iter =  19 .  step = 0.007731407 ku  =  7.438993 => Likelihood =  6.920066 
+Calculating PL for parameter  ku  and iter =  20 .  step = 0.007475062 ku  =  7.446468 => Likelihood =  6.951446 
+Calculating PL for parameter  ku  and iter =  21 .  step = 0.007264904 ku  =  7.453733 => Likelihood =  7.072698 
+Calculating PL for parameter  ku  and iter =  22 .  step = 0.007264904 ku  =  7.460998 => Likelihood =  7.06132 
+Calculating PL for parameter  ku  and iter =  23 .  step = 0.007264904 ku  =  7.468262 => Likelihood =  7.102883 
+Calculating PL for parameter  ku  and iter =  24 .  step = 0.007264904 ku  =  7.475527 => Likelihood =  7.131521 
+Calculating PL for parameter  ku  and iter =  25 .  step = 0.007264904 ku  =  7.482792 => Likelihood =  7.17507 
+Calculating PL for parameter  ku  and iter =  26 .  step = 0.007264904 ku  =  7.490057 => Likelihood =  7.221678 
+Calculating PL for parameter  ku  and iter =  27 .  step = 0.007264904 ku  =  7.497322 => Likelihood =  7.27022 
+Calculating PL for parameter  ku  and iter =  28 .  step = 0.007264904 ku  =  7.504587 => Likelihood =  7.320749 
+Calculating PL for parameter  ku  and iter =  29 .  step = 0.007264904 ku  =  7.511852 => Likelihood =  7.41365 
+Calculating PL for parameter  ku  and iter =  30 .  step = 0.007264904 ku  =  7.519117 => Likelihood =  7.494665 
+Calculating PL for parameter  ku  and iter =  31 .  step = 0.007264904 ku  =  7.526382 => Likelihood =  7.582198 
+Calculating PL for parameter  ku  and iter =  32 .  step = 0.007264904 ku  =  7.533647 => Likelihood =  8.117264 
+Calculating PL for parameter  ku  and iter =  33 .  step = 0.007264904 ku  =  7.540912 => Likelihood =  8.182282 
+Calculating PL for parameter  ku  and iter =  34 .  step = 0.007264904 ku  =  7.548176 => Likelihood =  8.249369 
+Calculating PL for parameter  ku  and iter =  35 .  step = 0.007264904 ku  =  7.555441 => Likelihood =  8.319161 
+Calculating PL for parameter  ku  and iter =  36 .  step = 0.007264904 ku  =  7.562706 => Likelihood =  8.39819 
+Calculating PL for parameter  ku  and iter =  37 .  step = 0.007264904 ku  =  7.569971 => Likelihood =  8.668666 
+Calculating PL for parameter  ku  and iter =  38 .  step = 0.007264904 ku  =  7.577236 => Likelihood =  8.741699 
+Calculating PL for parameter  ku  and iter =  39 .  step = 0.007264904 ku  =  7.584501 => Likelihood =  8.816533 
+Calculating PL for parameter  ku  and iter =  40 .  step = 0.007264904 ku  =  7.591766 => Likelihood =  8.893185 
+Calculating PL for parameter  ku  and iter =  41 .  step = 0.007264904 ku  =  7.599031 => Likelihood =  8.971666 
+Calculating PL for parameter  ku  and iter =  42 .  step = 0.007264904 ku  =  7.606296 => Likelihood =  9.085565 
+Calculating PL for parameter  ku  and iter =  43 .  step = 0.007264904 ku  =  7.613561 => Likelihood =  9.168168 
+Calculating PL for parameter  ku  and iter =  44 .  step = 0.007264904 ku  =  7.620825 => Likelihood =  9.279442 
+Calculating PL for parameter  ku  and iter =  45 .  step = 0.007264904 ku  =  7.62809 => Likelihood =  9.366856 
+Calculating PL for parameter  ku  and iter =  46 .  step = 0.007264904 ku  =  7.635355 => Likelihood =  9.455937 
+Calculating PL for parameter  ku  and iter =  47 .  step = 0.007264904 ku  =  7.64262 => Likelihood =  9.546861 
+Calculating PL for parameter  ku  and iter =  48 .  step = 0.007264904 ku  =  7.649885 => Likelihood =  9.639498 
+Calculating PL for parameter  ku  and iter =  49 .  step = 0.007264904 ku  =  7.65715 => Likelihood =  9.653583 
+Calculating PL for parameter  ku  and iter =  50 .  step = 0.007264904 ku  =  7.664415 => Likelihood =  9.727217 
+Calculating PL for parameter  ku  and iter =  51 .  step = 0.007264904 ku  =  7.67168 => Likelihood =  9.895709 
+Calculating PL for parameter  ku  and iter =  52 .  step = 0.007264904 ku  =  7.678945 => Likelihood =  9.998712 
+Calculating PL for parameter  ku  and iter =  53 .  step = 0.007264904 ku  =  7.68621 => Likelihood =  10.14003 
+Calculating PL for parameter  ku  and iter =  54 .  step = 0.007264904 ku  =  7.693474 => Likelihood =  10.27725 
+Calculating PL for parameter  ku  and iter =  55 .  step = 0.007264904 ku  =  7.700739 => Likelihood =  10.43749 
+Forward search ended after  55 iterations. 
 Backward search begins... 
-Calculating PL for parameter  ku  and iter =  1 .  step = 0.01154697 ,  ku  =  7.214889 => Likelihood =  6.628803 
-Calculating PL for parameter  ku  and iter =  2 .  step = 0.0115331 ,  ku  =  7.203356 => Likelihood =  6.647253 
-Calculating PL for parameter  ku  and iter =  3 .  step = 0.01183579 ,  ku  =  7.19152 => Likelihood =  6.667353 
-Calculating PL for parameter  ku  and iter =  4 .  step = 0.01180682 ,  ku  =  7.179713 => Likelihood =  6.769332 
-Calculating PL for parameter  ku  and iter =  5 .  step = 0.0114944 ,  ku  =  7.168219 => Likelihood =  6.789383 
-Calculating PL for parameter  ku  and iter =  6 .  step = 0.01143611 ,  ku  =  7.156783 => Likelihood =  6.822262 
-Calculating PL for parameter  ku  and iter =  7 .  step = 0.01117933 ,  ku  =  7.145604 => Likelihood =  6.84336 
-Calculating PL for parameter  ku  and iter =  8 .  step = 0.01129907 ,  ku  =  7.134305 => Likelihood =  6.689869 
-Calculating PL for parameter  ku  and iter =  9 .  step = 0.01140378 ,  ku  =  7.122901 => Likelihood =  6.944742 
-Calculating PL for parameter  ku  and iter =  10 .  step = 0.009549855 ,  ku  =  7.113351 => Likelihood =  6.963049 
-Calculating PL for parameter  ku  and iter =  11 .  step = 0.01087335 ,  ku  =  7.102478 => Likelihood =  7.176125 
-Calculating PL for parameter  ku  and iter =  12 .  step = 0.009697482 ,  ku  =  7.09278 => Likelihood =  7.190965 
-Calculating PL for parameter  ku  and iter =  13 .  step = 0.0101006 ,  ku  =  7.082679 => Likelihood =  7.206277 
-Calculating PL for parameter  ku  and iter =  14 .  step = 0.01012692 ,  ku  =  7.072553 => Likelihood =  7.394535 
-Calculating PL for parameter  ku  and iter =  15 .  step = 0.01051802 ,  ku  =  7.062035 => Likelihood =  7.096 
-Calculating PL for parameter  ku  and iter =  16 .  step = 0.008863216 ,  ku  =  7.053171 => Likelihood =  7.512073 
-Calculating PL for parameter  ku  and iter =  17 .  step = 0.009376908 ,  ku  =  7.043794 => Likelihood =  7.508904 
-Calculating PL for parameter  ku  and iter =  18 .  step = 0.008745629 ,  ku  =  7.035049 => Likelihood =  7.536388 
-Calculating PL for parameter  ku  and iter =  19 .  step = 0.008631476 ,  ku  =  7.026417 => Likelihood =  7.416294 
-Calculating PL for parameter  ku  and iter =  20 .  step = 0.007026417 ,  ku  =  7.019391 => Likelihood =  7.410567 
-Calculating PL for parameter  ku  and iter =  21 .  step = 0.007796637 ,  ku  =  7.011594 => Likelihood =  7.545242 
-Calculating PL for parameter  ku  and iter =  22 .  step = 0.008646639 ,  ku  =  7.002948 => Likelihood =  7.535194 
-Calculating PL for parameter  ku  and iter =  23 .  step = 0.008712442 ,  ku  =  6.994235 => Likelihood =  7.525557 
-Calculating PL for parameter  ku  and iter =  24 .  step = 0.008721311 ,  ku  =  6.985514 => Likelihood =  7.505795 
-Calculating PL for parameter  ku  and iter =  25 .  step = 0.008704717 ,  ku  =  6.976809 => Likelihood =  7.500247 
-Backward search ended after  25 iterations. 
+Calculating PL for parameter  ku  and iter =  1 .  step = 0.01022205 ku  =  7.254682 => Likelihood =  6.643803 
+Calculating PL for parameter  ku  and iter =  2 .  step = 0.01015953 ku  =  7.244522 => Likelihood =  6.647052 
+Calculating PL for parameter  ku  and iter =  3 .  step = 0.01021217 ku  =  7.23431 => Likelihood =  6.655706 
+Calculating PL for parameter  ku  and iter =  4 .  step = 0.01011047 ku  =  7.2242 => Likelihood =  6.590881 
+Calculating PL for parameter  ku  and iter =  5 .  step = 0.01020903 ku  =  7.213991 => Likelihood =  6.600936 
+Calculating PL for parameter  ku  and iter =  6 .  step = 0.01023263 ku  =  7.203758 => Likelihood =  6.612315 
+Calculating PL for parameter  ku  and iter =  7 .  step = 0.01059755 ku  =  7.193161 => Likelihood =  6.625275 
+Calculating PL for parameter  ku  and iter =  8 .  step = 0.01056265 ku  =  7.182598 => Likelihood =  6.722912 
+Calculating PL for parameter  ku  and iter =  9 .  step = 0.01053633 ku  =  7.172062 => Likelihood =  6.736951 
+Calculating PL for parameter  ku  and iter =  10 .  step = 0.01041674 ku  =  7.161645 => Likelihood =  6.752405 
+Calculating PL for parameter  ku  and iter =  11 .  step = 0.0105615 ku  =  7.151083 => Likelihood =  6.782548 
+Calculating PL for parameter  ku  and iter =  12 .  step = 0.01012062 ku  =  7.140963 => Likelihood =  6.798499 
+Calculating PL for parameter  ku  and iter =  13 .  step = 0.01031775 ku  =  7.130645 => Likelihood =  6.885192 
+Calculating PL for parameter  ku  and iter =  14 .  step = 0.009749552 ku  =  7.120895 => Likelihood =  7.071878 
+Calculating PL for parameter  ku  and iter =  15 .  step = 0.01070713 ku  =  7.110188 => Likelihood =  6.922555 
+Calculating PL for parameter  ku  and iter =  16 .  step = 0.01011132 ku  =  7.100077 => Likelihood =  6.974667 
+Calculating PL for parameter  ku  and iter =  17 .  step = 0.009373188 ku  =  7.090704 => Likelihood =  7.063439 
+Calculating PL for parameter  ku  and iter =  18 .  step = 0.00825783 ku  =  7.082446 => Likelihood =  7.077338 
+Calculating PL for parameter  ku  and iter =  19 .  step = 0.008222067 ku  =  7.074224 => Likelihood =  7.091151 
+Calculating PL for parameter  ku  and iter =  20 .  step = 0.008428774 ku  =  7.065795 => Likelihood =  7.105107 
+Calculating PL for parameter  ku  and iter =  21 .  step = 0.008276855 ku  =  7.057518 => Likelihood =  7.04648 
+Calculating PL for parameter  ku  and iter =  22 .  step = 0.009048895 ku  =  7.048469 => Likelihood =  7.075615 
+Calculating PL for parameter  ku  and iter =  23 .  step = 0.009912629 ku  =  7.038557 => Likelihood =  7.094375 
+Calculating PL for parameter  ku  and iter =  24 .  step = 0.009874291 ku  =  7.028682 => Likelihood =  7.112031 
+Calculating PL for parameter  ku  and iter =  25 .  step = 0.009826084 ku  =  7.018856 => Likelihood =  7.137072 
+Calculating PL for parameter  ku  and iter =  26 .  step = 0.01032275 ku  =  7.008534 => Likelihood =  7.287555 
+Calculating PL for parameter  ku  and iter =  27 .  step = 0.01023864 ku  =  6.998295 => Likelihood =  7.884468 
+Calculating PL for parameter  ku  and iter =  28 .  step = 0.006998295 ku  =  6.991297 => Likelihood =  7.434689 
+Calculating PL for parameter  ku  and iter =  29 .  step = 0.006991297 ku  =  6.984305 => Likelihood =  7.416171 
+Calculating PL for parameter  ku  and iter =  30 .  step = 0.006984305 ku  =  6.977321 => Likelihood =  7.432008 
+Calculating PL for parameter  ku  and iter =  31 .  step = 0.008949618 ku  =  6.968371 => Likelihood =  7.147393 
+Calculating PL for parameter  ku  and iter =  32 .  step = 0.008215344 ku  =  6.960156 => Likelihood =  7.285942 
+Calculating PL for parameter  ku  and iter =  33 .  step = 0.009055189 ku  =  6.951101 => Likelihood =  7.307918 
+Calculating PL for parameter  ku  and iter =  34 .  step = 0.008980231 ku  =  6.942121 => Likelihood =  7.357566 
+Calculating PL for parameter  ku  and iter =  35 .  step = 0.008584269 ku  =  6.933536 => Likelihood =  7.463134 
+Calculating PL for parameter  ku  and iter =  36 .  step = 0.007061076 ku  =  6.926475 => Likelihood =  7.262033 
+Calculating PL for parameter  ku  and iter =  37 .  step = 0.007515116 ku  =  6.91896 => Likelihood =  7.199351 
+Calculating PL for parameter  ku  and iter =  38 .  step = 0.007630986 ku  =  6.911329 => Likelihood =  7.22351 
+Calculating PL for parameter  ku  and iter =  39 .  step = 0.009304381 ku  =  6.902025 => Likelihood =  7.053604 
+Calculating PL for parameter  ku  and iter =  40 .  step = 0.01027612 ku  =  6.891749 => Likelihood =  7.23056 
+Calculating PL for parameter  ku  and iter =  41 .  step = 0.009114411 ku  =  6.882634 => Likelihood =  7.415583 
+Calculating PL for parameter  ku  and iter =  42 .  step = 0.006882634 ku  =  6.875752 => Likelihood =  7.369896 
+Calculating PL for parameter  ku  and iter =  43 .  step = 0.006875752 ku  =  6.868876 => Likelihood =  7.494264 
+Calculating PL for parameter  ku  and iter =  44 .  step = 0.006868876 ku  =  6.862007 => Likelihood =  7.468815 
+Calculating PL for parameter  ku  and iter =  45 .  step = 0.006862007 ku  =  6.855145 => Likelihood =  8.046173 
+Calculating PL for parameter  ku  and iter =  46 .  step = 0.006855145 ku  =  6.84829 => Likelihood =  8.051393 
+Calculating PL for parameter  ku  and iter =  47 .  step = 0.00684829 ku  =  6.841442 => Likelihood =  8.056454 
+Calculating PL for parameter  ku  and iter =  48 .  step = 0.006841442 ku  =  6.8346 => Likelihood =  7.847015 
+Calculating PL for parameter  ku  and iter =  49 .  step = 0.0068346 ku  =  6.827766 => Likelihood =  7.689813 
+Calculating PL for parameter  ku  and iter =  50 .  step = 0.006827766 ku  =  6.820938 => Likelihood =  7.704446 
+Calculating PL for parameter  ku  and iter =  51 .  step = 0.007760589 ku  =  6.813177 => Likelihood =  7.741218 
+Calculating PL for parameter  ku  and iter =  52 .  step = 0.006813177 ku  =  6.806364 => Likelihood =  7.727576 
+Calculating PL for parameter  ku  and iter =  53 .  step = 0.007266781 ku  =  6.799097 => Likelihood =  7.838781 
+Calculating PL for parameter  ku  and iter =  54 .  step = 0.007145475 ku  =  6.791952 => Likelihood =  7.987284 
+Calculating PL for parameter  ku  and iter =  55 .  step = 0.007679337 ku  =  6.784272 => Likelihood =  8.002884 
+Calculating PL for parameter  ku  and iter =  56 .  step = 0.006784272 ku  =  6.777488 => Likelihood =  8.118728 
+Calculating PL for parameter  ku  and iter =  57 .  step = 0.006777488 ku  =  6.770711 => Likelihood =  8.182321 
+Calculating PL for parameter  ku  and iter =  58 .  step = 0.006770711 ku  =  6.76394 => Likelihood =  7.940177 
+Calculating PL for parameter  ku  and iter =  59 .  step = 0.00676394 ku  =  6.757176 => Likelihood =  8.012456 
+Calculating PL for parameter  ku  and iter =  60 .  step = 0.006757176 ku  =  6.750419 => Likelihood =  8.511424 
+Backward search ended after  60 iterations. 

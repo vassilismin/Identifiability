@@ -1,509 +1,111 @@
 Forward search begins... 
-Calculating PL for parameter  ke  and iter =  1 .  step = 0.01273471 kTime difference of 19.50028 mins
-iteration: 1
-	f(x) = 71.691562
-iteration: 2
-	f(x) = 7376.269479
-iteration: 3
-	f(x) = 1109.695667
-iteration: 4
-	f(x) = 6411.279060
-iteration: 5
-	f(x) = 221.122045
-iteration: 6
-	f(x) = 1140.279570
-iteration: 7
-	f(x) = 548.597797
-iteration: 8
-	f(x) = 911.062102
-iteration: 9
-	f(x) = 551.203054
-iteration: 10
-	f(x) = 178.339232
-iteration: 11
-	f(x) = 198.273092
-iteration: 12
-	f(x) = 322.176158
-iteration: 13
-	f(x) = 77.302294
-iteration: 14
-	f(x) = 412.824395
-iteration: 15
-	f(x) = 26.945122
-iteration: 16
-	f(x) = 86.130443
-iteration: 17
-	f(x) = 37.958223
-iteration: 18
-	f(x) = 47.590141
-iteration: 19
-	f(x) = 70.193433
-iteration: 20
-	f(x) = 23.385618
-iteration: 21
-	f(x) = 44.425084
-iteration: 22
-	f(x) = 13.929440
-iteration: 23
-	f(x) = 156.031682
-iteration: 24
-	f(x) = 10.269362
-iteration: 25
-	f(x) = 19.602561
-iteration: 26
-	f(x) = 25.132961
-iteration: 27
-	f(x) = 11.944221
-iteration: 28
-	f(x) = 23.091386
-iteration: 29
-	f(x) = 10.821262
-iteration: 30
-	f(x) = 31.917989
-iteration: 31
-	f(x) = 7.820067
-iteration: 32
-	f(x) = 12.141201
-iteration: 33
-	f(x) = 9.258960
-iteration: 34
-	f(x) = 8.912305
-iteration: 35
-	f(x) = 12.333898
-iteration: 36
-	f(x) = 8.121199
-iteration: 37
-	f(x) = 9.571668
-iteration: 38
-	f(x) = 7.960849
-iteration: 39
-	f(x) = 8.295382
-iteration: 40
-	f(x) = 7.952651
-iteration: 41
-	f(x) = 8.347495
-iteration: 42
-	f(x) = 7.757214
-iteration: 43
-	f(x) = 7.520000
-iteration: 44
-	f(x) = 7.711337
-iteration: 45
-	f(x) = 7.968621
-iteration: 46
-	f(x) = 7.634972
-iteration: 47
-	f(x) = 8.436663
-iteration: 48
-	f(x) = 7.550479
-iteration: 49
-	f(x) = 7.694847
-iteration: 50
-	f(x) = 7.546246
-iteration: 51
-	f(x) = 7.790261
-iteration: 52
-	f(x) = 7.525692
-iteration: 53
-	f(x) = 7.496496
-iteration: 54
-	f(x) = 7.294279
-iteration: 55
-	f(x) = 7.629284
-iteration: 56
-	f(x) = 7.515628
-iteration: 57
-	f(x) = 7.316051
-iteration: 58
-	f(x) = 7.499728
-iteration: 59
-	f(x) = 7.682746
-iteration: 60
-	f(x) = 7.498063
-iteration: 61
-	f(x) = 7.516053
-iteration: 62
-	f(x) = 7.469868
-iteration: 63
-	f(x) = 7.554353
-iteration: 64
-Called from: approx(c(15, 25), c(a_high_15, a_high_25), temperature)
-iteration: 1
-	f(x) = 71.691562
-iteration: 2
-	f(x) = 7376.269479
-iteration: 3
-	f(x) = 1109.695667
-iteration: 4
-	f(x) = 6411.279060
-iteration: 5
-	f(x) = 221.122045
-iteration: 6
-	f(x) = 1140.279570
-iteration: 7
-	f(x) = 548.597797
-iteration: 8
-	f(x) = 911.062102
-iteration: 9
-	f(x) = 551.203054
-iteration: 10
-	f(x) = 178.339232
-iteration: 11
-	f(x) = 198.273092
-iteration: 12
-	f(x) = 322.176158
-iteration: 13
-	f(x) = 77.302294
-iteration: 14
-	f(x) = 412.824395
-iteration: 15
-	f(x) = 26.945122
-iteration: 16
-	f(x) = 86.130443
-iteration: 17
-	f(x) = 37.958223
-iteration: 18
-	f(x) = 47.590141
-iteration: 19
-	f(x) = 70.193433
-iteration: 20
-	f(x) = 23.385618
-iteration: 21
-	f(x) = 44.425084
-iteration: 22
-	f(x) = 13.929440
-iteration: 23
-	f(x) = 156.031682
-iteration: 24
-	f(x) = 10.269362
-iteration: 25
-	f(x) = 19.602561
-iteration: 26
-	f(x) = 25.132961
-iteration: 27
-	f(x) = 11.944221
-iteration: 28
-	f(x) = 23.091386
-iteration: 29
-	f(x) = 10.821262
-iteration: 30
-	f(x) = 31.917989
-iteration: 31
-	f(x) = 7.820067
-iteration: 32
-	f(x) = 12.141201
-iteration: 33
-	f(x) = 9.258960
-iteration: 34
-	f(x) = 8.912305
-iteration: 35
-	f(x) = 12.333898
-iteration: 36
-	f(x) = 8.121199
-iteration: 37
-	f(x) = 9.571668
-iteration: 38
-	f(x) = 7.960849
-iteration: 39
-	f(x) = 8.295382
-iteration: 40
-	f(x) = 7.952651
-iteration: 41
-	f(x) = 8.347495
-iteration: 42
-	f(x) = 7.757214
-iteration: 43
-	f(x) = 7.520000
-iteration: 44
-	f(x) = 7.711337
-iteration: 45
-	f(x) = 7.968621
-iteration: 46
-	f(x) = 7.634972
-iteration: 47
-	f(x) = 8.436663
-iteration: 48
-	f(x) = 7.550479
-iteration: 49
-	f(x) = 7.694847
-iteration: 50
-	f(x) = 7.546246
-iteration: 51
-	f(x) = 7.790261
-iteration: 52
-	f(x) = 7.525692
-iteration: 53
-	f(x) = 7.496496
-iteration: 54
-	f(x) = 7.294279
-iteration: 55
-	f(x) = 7.629284
-iteration: 56
-	f(x) = 7.515628
-iteration: 57
-	f(x) = 7.316051
-iteration: 58
-	f(x) = 7.499728
-iteration: 59
-	f(x) = 7.682746
-iteration: 60
-	f(x) = 7.498063
-iteration: 61
-	f(x) = 7.516053
-iteration: 62
-	f(x) = 7.469868
-iteration: 63
-	f(x) = 7.554353
-iteration: 64
-	f(x) = 7.261148
-iteration: 65
-	f(x) = 7.540576
-iteration: 66
-	f(x) = 7.170727
-iteration: 67
-	f(x) = 7.285937
-iteration: 68
-	f(x) = 7.248762
-iteration: 69
-	f(x) = 7.304738
-iteration: 70
-	f(x) = 7.266017
-iteration: 71
-	f(x) = 7.275764
-iteration: 72
-	f(x) = 7.262018
-iteration: 73
-	f(x) = 7.266654
-iteration: 74
-	f(x) = 7.261762
-iteration: 75
-	f(x) = 7.264374
-iteration: 76
-	f(x) = 7.261729
-iteration: 77
-	f(x) = 7.263134
-iteration: 78
-	f(x) = 7.262554
-iteration: 79
-	f(x) = 7.263087
-iteration: 80
-	f(x) = 7.270467
-iteration: 81
-	f(x) = 7.271291
-iteration: 82
-	f(x) = 7.271613
-iteration: 83
-	f(x) = 7.271283
-iteration: 84
-	f(x) = 7.271733
-iteration: 85
-	f(x) = 7.271181
-iteration: 86
-	f(x) = 7.271269
-iteration: 87
-	f(x) = 7.271367
-iteration: 88
-	f(x) = 7.271769
-iteration: 89
-	f(x) = 7.275332
-iteration: 90
-	f(x) = 7.165505
-iteration: 91
-	f(x) = 7.166831
-iteration: 92
-	f(x) = 7.174290
-iteration: 93
-	f(x) = 7.171072
-iteration: 94
-	f(x) = 7.164431
-iteration: 95
-	f(x) = 7.271780
-iteration: 96
-	f(x) = 7.160624
-iteration: 97
-	f(x) = 7.266461
-iteration: 98
-	f(x) = 7.271372
-iteration: 99
-	f(x) = 7.165368
-iteration: 100
-	f(x) = 7.160978
-iteration: 101
-	f(x) = 7.269446
-iteration: 102
-	f(x) = 7.163647
-iteration: 103
-	f(x) = 7.159471
-iteration: 104
-	f(x) = 7.156624
-iteration: 105
-	f(x) = 7.155616
-iteration: 106
-	f(x) = 7.152098
-iteration: 107
-	f(x) = 7.261722
-iteration: 108
-	f(x) = 7.159195
-iteration: 109
-	f(x) = 7.151428
-iteration: 110
-	f(x) = 7.147313
-iteration: 111
-	f(x) = 7.145656
-iteration: 112
-	f(x) = 7.140562
-iteration: 113
-	f(x) = 7.137892
-iteration: 114
-	f(x) = 7.131733
-iteration: 115
-	f(x) = 7.130920
-iteration: 116
-	f(x) = 7.443347
-iteration: 117
-	f(x) = 7.126752
-iteration: 118
-	f(x) = 7.127463
-iteration: 119
-	f(x) = 7.126766
-iteration: 120
-	f(x) = 7.127090
-iteration: 121
-	f(x) = 7.130147
-iteration: 122
-	f(x) = 7.127139
-iteration: 123
-	f(x) = 7.127549
-iteration: 124
-	f(x) = 7.126485
-iteration: 125
-	f(x) = 7.126710
-iteration: 126
-	f(x) = 7.126936
-iteration: 127
-	f(x) = 7.126195
-iteration: 128
-	f(x) = 7.126518
-iteration: 129
-	f(x) = 7.128549
-iteration: 130
-	f(x) = 7.126122
-iteration: 131
-	f(x) = 7.126598
-iteration: 132
-	f(x) = 7.126024
-iteration: 133
-	f(x) = 7.126531
-iteration: 134
-	f(x) = 7.126550
-iteration: 135
-	f(x) = 7.126467
-iteration: 136
-	f(x) = 7.126411
-iteration: 137
-	f(x) = 7.126583
-iteration: 138
-	f(x) = 7.126661
-iteration: 139
-	f(x) = 7.125966
-iteration: 140
-	f(x) = 7.126695
-iteration: 141
-	f(x) = 7.126346
-iteration: 142
-	f(x) = 7.126224
-iteration: 143
-	f(x) = 7.126099
-iteration: 144
-	f(x) = 7.126644
-iteration: 145
-	f(x) = 7.126271
-iteration: 146
-	f(x) = 7.126221
-iteration: 147
-	f(x) = 7.126190
-iteration: 148
-	f(x) = 7.126557
-iteration: 149
-	f(x) = 7.126748
-iteration: 150
-	f(x) = 7.126317
-iteration: 151
-	f(x) = 7.126397
-iteration: 152
-	f(x) = 7.126027
-iteration: 153
-	f(x) = 7.125827
-iteration: 154
-	f(x) = 7.126282
-iteration: 155
-	f(x) = 7.125797
-iteration: 156
-	f(x) = 7.126431
-iteration: 157
-	f(x) = 7.126240
-iteration: 158
-	f(x) = 7.126289
-iteration: 159
-	f(x) = 7.126254
-iteration: 160
-	f(x) = 7.126334
-iteration: 161
-	f(x) = 7.126431
-iteration: 162
-	f(x) = 7.126523
-iteration: 163
-	f(x) = 7.126479
-iteration: 164
-	f(x) = 7.126490
-iteration: 165
-	f(x) = 7.126341
-iteration: 166
-	f(x) = 7.126281
-iteration: 167
-	f(x) = 7.126488
-iteration: 168
-	f(x) = 7.126619
-iteration: 169
-	f(x) = 7.126187
-iteration: 170
-	f(x) = 7.126087
-iteration: 171
-	f(x) = 7.126390
-iteration: 172
-	f(x) = 7.126317
-iteration: 173
-	f(x) = 7.126744
-iteration: 174
-	f(x) = 7.126314
-iteration: 175
-	f(x) = 7.126155
-iteration: 176
-	f(x) = 7.126494
-iteration: 177
-	f(x) = 7.126473
-iteration: 178
-	f(x) = 7.126446
-iteration: 179
-	f(x) = 7.126021
-iteration: 180
-	f(x) = 7.126077
-iteration: 181
-	f(x) = 7.126324
-iteration: 182
-	f(x) = 7.126569
-iteration: 183
-	f(x) = 7.126110
-iteration: 184
-	f(x) = 7.126100
-iteration: 185
-	f(x) = 7.126243
-iteration: 186
-	f(x) = 7.126316
-iteration: 187
-	f(x) = 7.126405
-iteration: 188
-	f(x) = 7.126009
-iteration: 189
-Called from: approx(c(15, 25), c(a_high_15, a_high_25), temperature)
-[1]  7.20  6.90 -4.18
+Calculating PL for parameter  ke  and iter =  1 .  step = 0.01272913 ke  =  7.741495 => Likelihood =  6.555149 
+Calculating PL for parameter  ke  and iter =  2 .  step = 0.01177878 ke  =  7.753274 => Likelihood =  6.606175 
+Calculating PL for parameter  ke  and iter =  3 .  step = 0.0111719 ke  =  7.764446 => Likelihood =  6.661826 
+Calculating PL for parameter  ke  and iter =  4 .  step = 0.01232716 ke  =  7.776773 => Likelihood =  6.671758 
+Calculating PL for parameter  ke  and iter =  5 .  step = 0.01230828 ke  =  7.789081 => Likelihood =  6.728545 
+Calculating PL for parameter  ke  and iter =  6 .  step = 0.01160019 ke  =  7.800681 => Likelihood =  6.691898 
+Calculating PL for parameter  ke  and iter =  7 .  step = 0.01218183 ke  =  7.812863 => Likelihood =  6.698375 
+Calculating PL for parameter  ke  and iter =  8 .  step = 0.01218655 ke  =  7.82505 => Likelihood =  6.707549 
+Calculating PL for parameter  ke  and iter =  9 .  step = 0.01219027 ke  =  7.83724 => Likelihood =  6.719126 
+Calculating PL for parameter  ke  and iter =  10 .  step = 0.01209085 ke  =  7.849331 => Likelihood =  6.743677 
+Calculating PL for parameter  ke  and iter =  11 .  step = 0.0119724 ke  =  7.861303 => Likelihood =  6.819495 
+Calculating PL for parameter  ke  and iter =  12 .  step = 0.01168473 ke  =  7.872988 => Likelihood =  6.743234 
+Calculating PL for parameter  ke  and iter =  13 .  step = 0.01180103 ke  =  7.884789 => Likelihood =  6.863273 
+Calculating PL for parameter  ke  and iter =  14 .  step = 0.01143525 ke  =  7.896224 => Likelihood =  6.9338 
+Calculating PL for parameter  ke  and iter =  15 .  step = 0.01121924 ke  =  7.907444 => Likelihood =  6.927733 
+Calculating PL for parameter  ke  and iter =  16 .  step = 0.01123226 ke  =  7.918676 => Likelihood =  7.036244 
+Calculating PL for parameter  ke  and iter =  17 .  step = 0.009040884 ke  =  7.927717 => Likelihood =  7.061493 
+Calculating PL for parameter  ke  and iter =  18 .  step = 0.01063946 ke  =  7.938356 => Likelihood =  7.111414 
+Calculating PL for parameter  ke  and iter =  19 .  step = 0.01067594 ke  =  7.949032 => Likelihood =  7.171752 
+Calculating PL for parameter  ke  and iter =  20 .  step = 0.01021217 ke  =  7.959244 => Likelihood =  7.236407 
+Calculating PL for parameter  ke  and iter =  21 .  step = 0.009924931 ke  =  7.969169 => Likelihood =  7.302896 
+Calculating PL for parameter  ke  and iter =  22 .  step = 0.00962467 ke  =  7.978794 => Likelihood =  7.404131 
+Calculating PL for parameter  ke  and iter =  23 .  step = 0.009159615 ke  =  7.987954 => Likelihood =  7.50389 
+Calculating PL for parameter  ke  and iter =  24 .  step = 0.007728766 ke  =  7.995682 => Likelihood =  8.075766 
+Calculating PL for parameter  ke  and iter =  25 .  step = 0.007728766 ke  =  8.003411 => Likelihood =  8.142461 
+Calculating PL for parameter  ke  and iter =  26 .  step = 0.007728766 ke  =  8.01114 => Likelihood =  8.211335 
+Calculating PL for parameter  ke  and iter =  27 .  step = 0.007728766 ke  =  8.018869 => Likelihood =  8.28555 
+Calculating PL for parameter  ke  and iter =  28 .  step = 0.007728766 ke  =  8.026597 => Likelihood =  8.374295 
+Calculating PL for parameter  ke  and iter =  29 .  step = 0.007728766 ke  =  8.034326 => Likelihood =  8.415911 
+Calculating PL for parameter  ke  and iter =  30 .  step = 0.007728766 ke  =  8.042055 => Likelihood =  8.655825 
+Calculating PL for parameter  ke  and iter =  31 .  step = 0.007728766 ke  =  8.049784 => Likelihood =  8.786662 
+Calculating PL for parameter  ke  and iter =  32 .  step = 0.007728766 ke  =  8.057512 => Likelihood =  8.899566 
+Calculating PL for parameter  ke  and iter =  33 .  step = 0.007728766 ke  =  8.065241 => Likelihood =  8.982376 
+Calculating PL for parameter  ke  and iter =  34 .  step = 0.007728766 ke  =  8.07297 => Likelihood =  9.100854 
+Calculating PL for parameter  ke  and iter =  35 .  step = 0.007728766 ke  =  8.080699 => Likelihood =  9.173094 
+Calculating PL for parameter  ke  and iter =  36 .  step = 0.007728766 ke  =  8.088427 => Likelihood =  9.303223 
+Calculating PL for parameter  ke  and iter =  37 .  step = 0.007728766 ke  =  8.096156 => Likelihood =  9.395798 
+Calculating PL for parameter  ke  and iter =  38 .  step = 0.007728766 ke  =  8.103885 => Likelihood =  9.490373 
+Calculating PL for parameter  ke  and iter =  39 .  step = 0.007728766 ke  =  8.111614 => Likelihood =  9.586831 
+Calculating PL for parameter  ke  and iter =  40 .  step = 0.007728766 ke  =  8.119343 => Likelihood =  9.685247 
+Calculating PL for parameter  ke  and iter =  41 .  step = 0.007728766 ke  =  8.127071 => Likelihood =  9.701299 
+Calculating PL for parameter  ke  and iter =  42 .  step = 0.007728766 ke  =  8.1348 => Likelihood =  9.822696 
+Calculating PL for parameter  ke  and iter =  43 .  step = 0.007728766 ke  =  8.142529 => Likelihood =  9.95492 
+Calculating PL for parameter  ke  and iter =  44 .  step = 0.007728766 ke  =  8.150258 => Likelihood =  10.07443 
+Calculating PL for parameter  ke  and iter =  45 .  step = 0.007728766 ke  =  8.157986 => Likelihood =  10.22653 
+Calculating PL for parameter  ke  and iter =  46 .  step = 0.007728766 ke  =  8.165715 => Likelihood =  10.34735 
+Calculating PL for parameter  ke  and iter =  47 .  step = 0.007728766 ke  =  8.173444 => Likelihood =  10.4903 
+Forward search ended after  47 iterations. 
+Backward search begins... 
+Calculating PL for parameter  ke  and iter =  1 .  step = 0.01272913 ke  =  7.716037 => Likelihood =  6.64445 
+Calculating PL for parameter  ke  and iter =  2 .  step = 0.01224863 ke  =  7.703788 => Likelihood =  6.652388 
+Calculating PL for parameter  ke  and iter =  3 .  step = 0.01219785 ke  =  7.69159 => Likelihood =  6.597019 
+Calculating PL for parameter  ke  and iter =  4 .  step = 0.01201803 ke  =  7.679572 => Likelihood =  6.599147 
+Calculating PL for parameter  ke  and iter =  5 .  step = 0.01224992 ke  =  7.667322 => Likelihood =  6.61261 
+Calculating PL for parameter  ke  and iter =  6 .  step = 0.01217439 ke  =  7.655148 => Likelihood =  6.627677 
+Calculating PL for parameter  ke  and iter =  7 .  step = 0.0121063 ke  =  7.643042 => Likelihood =  6.727318 
+Calculating PL for parameter  ke  and iter =  8 .  step = 0.01167271 ke  =  7.631369 => Likelihood =  6.742797 
+Calculating PL for parameter  ke  and iter =  9 .  step = 0.01154654 ke  =  7.619822 => Likelihood =  6.759967 
+Calculating PL for parameter  ke  and iter =  10 .  step = 0.01158059 ke  =  7.608242 => Likelihood =  6.792688 
+Calculating PL for parameter  ke  and iter =  11 .  step = 0.01145027 ke  =  7.596792 => Likelihood =  7.013262 
+Calculating PL for parameter  ke  and iter =  12 .  step = 0.01042103 ke  =  7.586371 => Likelihood =  7.026017 
+Calculating PL for parameter  ke  and iter =  13 .  step = 0.009765574 ke  =  7.576605 => Likelihood =  6.919154 
+Calculating PL for parameter  ke  and iter =  14 .  step = 0.0104731 ke  =  7.566132 => Likelihood =  6.937467 
+Calculating PL for parameter  ke  and iter =  15 .  step = 0.01059784 ke  =  7.555534 => Likelihood =  7.062154 
+Calculating PL for parameter  ke  and iter =  16 .  step = 0.007555534 ke  =  7.547979 => Likelihood =  7.074801 
+Calculating PL for parameter  ke  and iter =  17 .  step = 0.007547979 ke  =  7.540431 => Likelihood =  7.08715 
+Calculating PL for parameter  ke  and iter =  18 .  step = 0.007540431 ke  =  7.53289 => Likelihood =  7.099568 
+Calculating PL for parameter  ke  and iter =  19 .  step = 0.01005153 ke  =  7.522839 => Likelihood =  7.02232 
+Calculating PL for parameter  ke  and iter =  20 .  step = 0.01068109 ke  =  7.512158 => Likelihood =  7.075292 
+Calculating PL for parameter  ke  and iter =  21 .  step = 0.01024236 ke  =  7.501915 => Likelihood =  7.095433 
+Calculating PL for parameter  ke  and iter =  22 .  step = 0.0100192 ke  =  7.491896 => Likelihood =  7.11412 
+Calculating PL for parameter  ke  and iter =  23 .  step = 0.01035251 ke  =  7.481543 => Likelihood =  7.134893 
+Calculating PL for parameter  ke  and iter =  24 .  step = 0.009218265 ke  =  7.472325 => Likelihood =  7.288963 
+Calculating PL for parameter  ke  and iter =  25 .  step = 0.00829445 ke  =  7.464031 => Likelihood =  7.6787 
+Calculating PL for parameter  ke  and iter =  26 .  step = 0.01311952 ke  =  7.450911 => Likelihood =  7.409314 
+Calculating PL for parameter  ke  and iter =  27 .  step = 0.00746934 ke  =  7.443442 => Likelihood =  7.424231 
+Calculating PL for parameter  ke  and iter =  28 .  step = 0.007776038 ke  =  7.435666 => Likelihood =  7.438555 
+Calculating PL for parameter  ke  and iter =  29 .  step = 0.00772969 ke  =  7.427936 => Likelihood =  7.138494 
+Calculating PL for parameter  ke  and iter =  30 .  step = 0.007427936 ke  =  7.420508 => Likelihood =  7.294544 
+Calculating PL for parameter  ke  and iter =  31 .  step = 0.009299375 ke  =  7.411209 => Likelihood =  7.316438 
+Calculating PL for parameter  ke  and iter =  32 .  step = 0.009377766 ke  =  7.401831 => Likelihood =  7.368027 
+Calculating PL for parameter  ke  and iter =  33 .  step = 0.009020857 ke  =  7.39281 => Likelihood =  7.393701 
+Calculating PL for parameter  ke  and iter =  34 .  step = 0.008930306 ke  =  7.38388 => Likelihood =  7.206376 
+Calculating PL for parameter  ke  and iter =  35 .  step = 0.008455238 ke  =  7.375425 => Likelihood =  7.168901 
+Calculating PL for parameter  ke  and iter =  36 .  step = 0.007375425 ke  =  7.368049 => Likelihood =  7.047246 
+Calculating PL for parameter  ke  and iter =  37 .  step = 0.01017141 ke  =  7.357878 => Likelihood =  7.264601 
+Calculating PL for parameter  ke  and iter =  38 .  step = 0.009756562 ke  =  7.348121 => Likelihood =  7.410513 
+Calculating PL for parameter  ke  and iter =  39 .  step = 0.007348121 ke  =  7.340773 => Likelihood =  7.365935 
+Calculating PL for parameter  ke  and iter =  40 .  step = 0.0092649 ke  =  7.331508 => Likelihood =  7.497354 
+Calculating PL for parameter  ke  and iter =  41 .  step = 0.008523902 ke  =  7.322984 => Likelihood =  7.630118 
+Calculating PL for parameter  ke  and iter =  42 .  step = 0.01016125 ke  =  7.312823 => Likelihood =  8.050926 
+Calculating PL for parameter  ke  and iter =  43 .  step = 0.007312823 ke  =  7.30551 => Likelihood =  8.056048 
+Calculating PL for parameter  ke  and iter =  44 .  step = 0.00730551 ke  =  7.298205 => Likelihood =  8.061872 
+Calculating PL for parameter  ke  and iter =  45 .  step = 0.007298205 ke  =  7.290907 => Likelihood =  7.687338 
+Calculating PL for parameter  ke  and iter =  46 .  step = 0.007290907 ke  =  7.283616 => Likelihood =  7.701933 
+Calculating PL for parameter  ke  and iter =  47 .  step = 0.00737178 ke  =  7.276244 => Likelihood =  7.738904 
+Calculating PL for parameter  ke  and iter =  48 .  step = 0.007276244 ke  =  7.268968 => Likelihood =  7.725347 
+Calculating PL for parameter  ke  and iter =  49 .  step = 0.007268968 ke  =  7.261699 => Likelihood =  7.837503 
+Calculating PL for parameter  ke  and iter =  50 .  step = 0.007261699 ke  =  7.254437 => Likelihood =  7.987199 
+Calculating PL for parameter  ke  and iter =  51 .  step = 0.007254437 ke  =  7.247183 => Likelihood =  8.003486 
+Calculating PL for parameter  ke  and iter =  52 .  step = 0.007247183 ke  =  7.239935 => Likelihood =  8.120906 
+Calculating PL for parameter  ke  and iter =  53 .  step = 0.007239935 ke  =  7.232695 => Likelihood =  8.184844 
+Calculating PL for parameter  ke  and iter =  54 .  step = 0.007232695 ke  =  7.225463 => Likelihood =  8.039154 
+Calculating PL for parameter  ke  and iter =  55 .  step = 0.007225463 ke  =  7.218237 => Likelihood =  8.016046 
+Calculating PL for parameter  ke  and iter =  56 .  step = 0.007218237 ke  =  7.211019 => Likelihood =  8.16528 
+Calculating PL for parameter  ke  and iter =  57 .  step = 0.007211019 ke  =  7.203808 => Likelihood =  8.080185 
+Calculating PL for parameter  ke  and iter =  58 .  step = 0.007203808 ke  =  7.196604 => Likelihood =  8.093173 
+Calculating PL for parameter  ke  and iter =  59 .  step = 0.007196604 ke  =  7.189408 => Likelihood =  8.097882 
+Calculating PL for parameter  ke  and iter =  60 .  step = 0.007189408 ke  =  7.182218 => Likelihood =  7.973678 
+Backward search ended after  60 iterations. 
