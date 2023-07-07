@@ -174,8 +174,14 @@ WSSR <- function(observed, predicted, weights, comp.names =NULL){
 # in order to be used inside the profile likelihood function and be able to change 
 # the constant parameter easily
 obj_f <- function(x, constant_theta, constant_theta_name, params_names, constant_params=NULL,
-                             PFAS_data, Cwater, age,
-                             temperatures, MW, weights_values){
+                  data_df, errors_df){
+  
+  # Convert water concentration in ng/L
+  Cwater = c(1.44, 2.05, 2.31)*1000
+  names(Cwater) <- c("16oC", "20oC", "24oC")
+  age = 7+7 # age of D.magna at the beginning of exposure in days
+  temperatures <- c(16, 20, 24) #experiment temperature in oC 
+  MW <- 614 # molecular weight of PFDoA
   
   # Indexes of body burden and exposure time in data frame
   BB_index <- c(2,4,6)
@@ -186,7 +192,7 @@ obj_f <- function(x, constant_theta, constant_theta_name, params_names, constant
   score <- rep(NA, length(temperatures))
   # Iterate over PFAS names 
   # Load PFAS data
-  df <- PFAS_data
+  df <- data_df
   # Assign the j-th value to the theta_i (the constant parameter)
   if(length(constant_theta_name) != length(constant_theta)){
     stop("The constant_theta_name vector must be of equal length with the constant_theta vector")
@@ -221,7 +227,7 @@ obj_f <- function(x, constant_theta, constant_theta_name, params_names, constant
     # Body burden of selected PFAS at selected temperature
     BodyBurden <- df[!is.na(df[,BB_index[temp_iter]]),BB_index[temp_iter]]
     # Errors values of selected PFAS at selected temperature
-    error_values <- weights_values[!is.na(weights_values[,Errors_index[temp_iter]]),Errors_index[temp_iter]]
+    error_values <- errors_df[!is.na(errors_df[,Errors_index[temp_iter]]),Errors_index[temp_iter]]
     # Time used by numerical solver that integrates the system of ODE
     sol_times <- seq(0,15, 0.1)
     
@@ -254,80 +260,84 @@ obj_f <- function(x, constant_theta, constant_theta_name, params_names, constant
 #=======================#
 #   Profile Likelihood  #
 #=======================#
-profile_likelihood <- function(X
-     # obj_f, 
-     # i,
-     # thetas,
-     # thetas_names, 
-     # constant_params = NULL,
-     # data_df,
-     # errors_df,
-     # lb, ub, N_samples,
-     # alpha, df, q, global_optimum, 
-     # min_step_coef, max_step_coef,
-     # break_at_bounds = FALSE,
-     # # nlopt settings for the main optimization problem
-     # opts = list("algorithm" = "NLOPT_LN_NELDERMEAD",
-     #             "xtol_rel" = 1e-06, 
-     #             "ftol_rel" = 1e-06,
-     #             "ftol_abs" = 0.0,
-     #             "xtol_abs" = 0.0 ,
-     #             "maxeval" = 300,
-     #             "print_level" = 1),
-     # # nlopt settings for the estimation of theta_step
-     # opts_theta_step = list("algorithm_step" = 'NLOPT_LN_SBPLX',
-     #                        "xtol_rel_step" = 1e-05, 
-     #                        "ftol_rel_step" = 1e-05,
-     #                        "ftol_abs_step" = 0.0,
-     #                        "xtol_abs_step" = 0.0 ,
-     #                        "maxeval_step" = 50,
-     #                        "print_level_step" = 0),
-     # create_txt = TRUE
-                               ){
+profile_likelihood <- function(obj_f, 
+                               i,
+                               thetas,
+                               thetas_names, 
+                               constant_params = NULL,
+                               data_df,
+                               errors_df,
+                               lb, ub, N_samples,
+                               alpha, df, q, global_optimum, 
+                               min_step_coef, max_step_coef,
+                               break_at_bounds = FALSE,
+                               # nlopt settings for the main optimization problem
+                               opts = list("algorithm" = "NLOPT_LN_NELDERMEAD",
+                                           "xtol_rel" = 1e-06, 
+                                           "ftol_rel" = 1e-06,
+                                           "ftol_abs" = 0.0,
+                                           "xtol_abs" = 0.0 ,
+                                           "maxeval" = 300,
+                                           "print_level" = 1),
+                               # nlopt settings for the estimation of theta_step
+                               opts_theta_step = list("algorithm" = 'NLOPT_LN_SBPLX',
+                                                      "xtol_rel" = 1e-05, 
+                                                      "ftol_rel" = 1e-05,
+                                                      "ftol_abs" = 0.0,
+                                                      "xtol_abs" = 0.0 ,
+                                                      "maxeval" = 50,
+                                                      "print_level" = 0),
+                               create_txt = FALSE){
   
-  i=X$index # The index of the parameter whose PL is to be estimated
-  thetas=X$thetas # The optimal values of the parameters
-  thetas_names=X$thetas_names # the names of the parameters
-  constant_params = X$constant_params # the constant parameters of the model
-  data_df = X$data_df
-  errors_df = X$errors_df
-  lb=X$lb # The lower bounds of the parameters
-  ub=X$ub # The upper bounds of the parameters
-  N_samples=X$N_samples # The number of samples for each parameter
-  alpha = X$alpha # probability of chi-squared to estimate the quantile
-  df = X$df # the degrees of freedom of chi-squared to estimate the quantile
-  global_optimum = X$global_optimum # the minimum objective function value (equivalent to maximized likelihood value)
-  q = X$q # Parameter to estimate the theta_step
-  max_step_coef <- X$max_step_coef
-  min_step_coef <- X$min_step_coef
-  break_at_bounds <- X$break_at_bounds
-  opts <- X$opts
-  opts_theta_step <- X$opts_theta_step
-  create_txt <- X$create_txt
-  
+  # INPUT VARIABLES:
+  # obj_f             function that returns the value of the objective function
+  # i                 integer defining the position of the parameter to estimate the profile-likelihood
+  # thetas            vector containing the optimal values of parameters 
+  # thetas_names      vector of characters with the names of the parameters
+  # constant_params   vector with any extra constant parameters of the model and their names
+  # data_df           dataframe containing the data used in the obj_f 
+  # errors_df         dataframe with the meassured experimental errors (or SD values) 
+  # lb                vector with the lower bounds of the "thetas" parameters
+  # ub                vector with the upper bounds of the "thetas" parameters
+  # N_samples         integer defining the number of samples taken around the theta optimal
+  #                   value (N samples will be taken from each side of the theta)
+  # alpha             probability of chi-squared to estimate the quantile (it is
+  #                   the "p" variable of qchisq() function)
+  # df                degrees of freedom of qchisq()
+  # global_optimum    scalar defining the global minimum of the objective function
+  # q                 a variable used in the estimation of the adaptive step (see Raue et al., 2009)
+  # max_step_coef     coefficient defining the maximum permitted step  
+  # min_step_coef     coefficient defining the minimum permitted step
+  # break_at_bounds   logical; if TRUE the the sampling of the parameter stops because the bounds were exceeded
+  # opts              list with the options selected for the minimization of the objective function
+  #                   (check the nloptr package for more details)
+  # opts_theta_step   list with the options selected for the estimation of the adaptive step
+  #                   (check the nloptr package for more details)
+  # create_txt        logical; if TRUE a txt file will be created at the current working directory 
+  #                   to save the samples of the parameters and the corresponding values of the objective function
   
   # Estimate the Delta_alpha parameter
   Delta_alpha <- qchisq(alpha, df)
   
+  # Take the name of the i-th parameter
   theta_i_name <- names(thetas)[i] # the name of the theta_i parameter
   
   # Function to estimate the theta_step by solving the equation
   # chi^2(theta) - chi^2(theta_hat) - q*Delta_alpha = 0 
-  theta_step_estimation <- function(theta_step, theta_last, obj_f, constant_params, index, global_optimum, q, Delta_alpha){
+  theta_step_estimation <- function(theta_step, theta_last, obj_f, constant_params, index, current_score, q, Delta_alpha){
     i <- index
     x <- theta_last
     x[i] <- x[i] + theta_step
-    chi2_last <- global_optimum
+    chi2_last <- current_score
     
     chi2 <- obj_f(x = x, constant_theta = NULL, constant_theta_name = NULL, params_names = names(x),
                   constant_params = constant_params,
-                  PFAS_data = data_df, Cwater = Cwater, age = age, temperatures = temperatures,
-                  MW = MW, weights_values = errors_df)
+                  data_df = data_df, errors_df = errors_df)
     
     return(abs(chi2 - chi2_last - q*Delta_alpha))
   }
   
-  # Set the threshold. The threshold is estimated as chi^2(theta_hat) + Delta_alpha 
+  # Set the threshold. The threshold is estimated as global_optimum + Delta_alpha 
   threshold =  global_optimum + Delta_alpha
   
   if(create_txt) sink(paste0("check_progress_",thetas_names[i], ".txt")) #keep a txt to check the progress while running
@@ -351,6 +361,8 @@ profile_likelihood <- function(X
   # Initiate theta_last and set it equal with the theta_hat
   theta_last <- thetas
   
+  # set the current score equal global optimum to estimate the first step
+  current_score <- global_optimum 
   while (iter_counter < N_samples & current_score < threshold) {
     iter_counter <- iter_counter + 1
     # Estimation of theta_step 
@@ -360,7 +372,7 @@ profile_likelihood <- function(X
                                   ub = 1,
                                   opts = opts_theta_step,
                                   theta_last = theta_last, index = i,
-                                  global_optimum = global_optimum, q = q, Delta_alpha=Delta_alpha,
+                                  current_score = current_score, q = q, Delta_alpha=Delta_alpha,
                                   obj_f=obj_f, 
                                   constant_params=constant_params)$solution
     
@@ -397,12 +409,12 @@ profile_likelihood <- function(X
                                   constant_theta_name = constant_theta_name,
                                   params_names = params_names,
                                   constant_params=constant_params,
-                                  PFAS_data = data_df,
-                                  Cwater = Cwater,
-                                  age = age ,
-                                  temperatures = temperatures,
-                                  MW = MW,
-                                  weights_values = errors_df)
+                                  data_df = data_df,
+                                  # Cwater = Cwater,
+                                  # age = age ,
+                                  # temperatures = temperatures,
+                                  # MW = MW,
+                                  errors_df = errors_df)
     
     cat("Calculating PL for parameter ", theta_i_name, " and iter = ", iter_counter,". ", "step =", theta_step , constant_theta_name ," = ", constant_theta , "=> Likelihood = ", optimization$objective, "\n")  
     
@@ -445,7 +457,8 @@ profile_likelihood <- function(X
   constant_theta <- thetas[i]
   # Initiate theta_last and set it equal with the theta_hat
   theta_last <- thetas
-  
+  # set the current score equal global optimum to estimate the first step
+  current_score <- global_optimum 
   while (iter_counter < N_samples & current_score < threshold) {
     iter_counter <- iter_counter + 1
     # Estimation of theta_step 
@@ -455,7 +468,7 @@ profile_likelihood <- function(X
                                   ub = 1,
                                   opts = opts_theta_step,
                                   theta_last = theta_last, index = i,
-                                  global_optimum = global_optimum, q = q, Delta_alpha=Delta_alpha,
+                                  current_score = current_score, q = q, Delta_alpha=Delta_alpha,
                                   obj_f=obj_f, 
                                   constant_params=constant_params)$solution
     
@@ -490,12 +503,12 @@ profile_likelihood <- function(X
                                   constant_theta_name = constant_theta_name,
                                   params_names = params_names,
                                   constant_params=constant_params,
-                                  PFAS_data = data_df,
-                                  Cwater = Cwater,
-                                  age = age ,
-                                  temperatures = temperatures,
-                                  MW = MW,
-                                  weights_values = errors_df)
+                                  data_df = data_df,
+                                  # Cwater = Cwater,
+                                  # age = age ,
+                                  # temperatures = temperatures,
+                                  # MW = MW,
+                                  errors_df = errors_df)
     
     cat("Calculating PL for parameter ", theta_i_name, " and iter = ", iter_counter,". ", "step =", theta_step , constant_theta_name ," = ", constant_theta , "=> Likelihood = ", optimization$objective, "\n")  
     
@@ -556,7 +569,34 @@ Identifiability_analysis <- function(obj_f, thetas, thetas_names, data_df, error
                                                             "maxeval_step" = 50,
                                                             "print_level_step" = 0),
                                      create_txt = TRUE){
-
+  
+  # INPUT VARIABLES:
+  # obj_f             function that returns the value of the objective function
+  # thetas            vector containing the optimal values of parameters 
+  # thetas_names      vector of characters with the names of the parameters
+  # data_df           dataframe containing the data used in the obj_f 
+  # errors_df         dataframe with the meassured experimental errors (or SD values) 
+  # lb                vector with the lower bounds of the "thetas" parameters
+  # ub                vector with the upper bounds of the "thetas" parameters
+  # N_samples         integer defining the number of samples taken around the theta optimal
+  #                   value (N samples will be taken from each side of the theta)
+  # alpha             probability of chi-squared to estimate the quantile (it is
+  #                   the "p" variable of qchisq() function)
+  # df                degrees of freedom of qchisq()
+  # q                 a variable used in the estimation of the adaptive step (see Raue et al., 2009)
+  # global_optimum    scalar defining the global minimum of the objective function
+  # min_step_coef     coefficient defining the minimum permitted step
+  # max_step_coef     coefficient defining the maximum permitted step  
+  # N_cores           integer defining the number of cores for the parallel processing
+  # constant_params   vector with any extra constant parameters of the model and their names
+  # break_at_bounds   logical; if TRUE the the sampling of the parameter stops because the bounds were exceeded
+  # opts              list with the options selected for the minimization of the objective function
+  #                   (check the nloptr package for more details)
+  # opts_theta_step   list with the options selected for the estimation of the adaptive step
+  #                   (check the nloptr package for more details)
+  # create_txt        logical; if TRUE a txt file will be created at the current working directory 
+  #                   to save the samples of the parameters and the corresponding values of the objective function
+  
   
   # Number of parameters tested in the identifiability analysis
   N_parameters <- length(thetas)
@@ -573,17 +613,49 @@ Identifiability_analysis <- function(obj_f, thetas, thetas_names, data_df, error
                    q = q,
                    max_step_coef = max_step_coef,
                    min_step_coef = min_step_coef,
-                   break_at_bounds = FALSE,
+                   break_at_bounds = break_at_bounds,
                    opts = opts,
                    opts_theta_step=opts_theta_step,
                    create_txt = create_txt)
   }
   
   start.time <- Sys.time()
+  # Set up the cluster.
   cluster <- makeCluster(N_cores)
+  
+  # parallel_func is a wrapper of the profile_likelihood function in order to 
+  # take all the input variable of the profile_likelihood as a list and un-list
+  # the to provide them to profile_likelihood. It just returns the output
+  # of the profile_likelihood function.
+  parallel_func <- function(X){
+    with(as.list(X),{
+      profile_likelihood(obj_f, 
+                         i=index,
+                         thetas,
+                         thetas_names, 
+                         constant_params,
+                         data_df,
+                         errors_df,
+                         lb, ub, 
+                         N_samples,
+                         alpha,
+                         df,
+                         q, 
+                         global_optimum, 
+                         min_step_coef,
+                         max_step_coef,
+                         break_at_bounds,
+                         # nlopt settings for the main optimization problem
+                         opts,
+                         # nlopt settings for the estimation of theta_step
+                         opts_theta_step,
+                         create_txt)
+    })
+  }
   # Export to the cluster any function or parameter that the obj_f needs to work.
-  clusterExport(cl=cluster, c(names(exported_to_cluster),"obj_f"))
-  output <- parLapply(cluster, X, profile_likelihood)
+  clusterExport(cl=cluster, c(names(exported_to_cluster),"obj_f", "profile_likelihood"))
+  output <- parLapply(cluster, X, parallel_func)
+  # Terminate the cluster.
   stopCluster(cluster)
   total.duration <- Sys.time() - start.time
   
@@ -621,12 +693,13 @@ Identifiability_analysis <- function(obj_f, thetas, thetas_names, data_df, error
                 "Upper_bound" = upper_bound)) 
   }
   
+  # Collect all the results of interest and present them in a dataframe.
   results_df <- data.frame(matrix(NA, ncol = 6, nrow = length(thetas)))
   rownames(results_df) <- thetas_names
   colnames(results_df) <- c("Non-Identifiability" , "Optimal", "Lower_Bound", "Upper_Bound", "Exit_code_B", "Exit_code_F")
   for (i in 1:length(thetas)) {
     pl_results <- output[[i]]$'plik'
-    confidence_intervals <- ci_estimation(pl_results,  alpha = 0.95, df=1, global_optimum)
+    confidence_intervals <- ci_estimation(pl_results,  alpha = alpha, df=df, global_optimum)
     results_df$Lower_Bound[i] <- confidence_intervals$Lower_bound
     results_df$Upper_Bound[i] <- confidence_intervals$Upper_bound
     results_df$Optimal[i] <- thetas[[i]]
@@ -705,36 +778,27 @@ profile_likelihood_plots <- function(analysis_results, thetas, global_optimum, a
 data_ls <- openxlsx::read.xlsx ('C:/Users/vassi/Documents/GitHub/PFAS_biokinetics_models/D.Magna/Wang_2023/Wang_data_reduced2.xlsx', sheet = 'PFDoA')
 errors_df <- read.csv('C:/Users/vassi/Documents/GitHub/Identifiability/Daphnia_magna_example/PFDoA_errors.csv')
 
-# Convert water concentration in ng/L
-Cwater = c(1.44, 2.05, 2.31)*1000
-names(Cwater) <- c("16oC", "20oC", "24oC")
-age = 7+7 # age of D.magna at the beginning of exposure in days
-temperatures <- c(16, 20, 24) #experiment temperature in oC 
 
-MW <- 614 # molecular weight of PFDoA
 
 # Test on ku, kon and Ke 
 
 # lower bounds of parameters
 #lb <- c(4, 4, 5, 6, 1e-06) 
-lb <- c(3,3,3)
+lb <- c(3,3)
 # upper bounds of parameters
 #ub <- c(8, 9, 8.5, 8.5, 1e-04) 
-ub <- c(10,10,10)
+ub <- c(10,10)
 
-constant_params <- c("Ka"=7.681146, "C_prot_init" = -4.189729)
+
+constant_params <- c("Ka"=7.681146, "ke"=7.728766, "C_prot_init" = -4.189729)
 
 exported_to_cluster = list("Size_estimation"=Size_estimation,
                            "dry_weight_estimation"=dry_weight_estimation,
                            "ode_func"=ode_func,
-                           "WSSR"=WSSR,
-                           "age"=age,
-                           "Cwater"=Cwater,
-                           "temperatures"=temperatures,
-                           "MW"=MW)
+                           "WSSR"=WSSR)
 
-thetas <- c(7.264904, 6.94284, 7.728766)
-thetas_names <- c("ku", "kon", "ke")
+thetas <- c(7.264904, 6.94284)
+thetas_names <- c("ku", "kon")
 names(thetas) <- thetas_names
 global_optimum <- 6.54365835275129 
 
@@ -745,14 +809,14 @@ test <- Identifiability_analysis(obj_f = obj_f,
                                  errors_df=errors_df,
                                  lb=lb ,
                                  ub=ub,
-                                 N_samples = 60,
+                                 N_samples = 50,
                                  alpha = 0.95 ,
                                  df = 1,
-                                 q = 0.5,
+                                 q = 0.1,
                                  global_optimum = global_optimum ,
-                                 min_step_coef = 1e-03 ,
+                                 min_step_coef = 1e-04 ,
                                  max_step_coef = 0.2,
-                                 N_cores = 3,
+                                 N_cores = 2,
                                  constant_params = constant_params,
                                  exported_to_cluster = exported_to_cluster,
                                  break_at_bounds = FALSE,

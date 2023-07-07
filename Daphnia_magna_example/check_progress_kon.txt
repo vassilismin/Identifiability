@@ -1,19 +1,23 @@
 Forward search begins... 
-Calculating PL for parameter  kon  and iter =  1 .  step = 0.02092669 kon  =  6.963767 => Likelihood =  6.920382 
-Calculating PL for parameter  kon  and iter =  2 .  step = 0.01536168 kon  =  6.979128 => Likelihood =  7.460566 
-Calculating PL for parameter  kon  and iter =  3 .  step = 0.007325146 kon  =  6.986454 => Likelihood =  7.294675 
-Calculating PL for parameter  kon  and iter =  4 .  step = 0.00694284 kon  =  6.993396 => Likelihood =  7.601915 
-Calculating PL for parameter  kon  and iter =  5 .  step = 0.00694284 kon  =  7.000339 => Likelihood =  8.004578 
-Calculating PL for parameter  kon  and iter =  6 .  step = 0.00694284 kon  =  7.007282 => Likelihood =  8.511792 
-Calculating PL for parameter  kon  and iter =  7 .  step = 0.00694284 kon  =  7.014225 => Likelihood =  9.267267 
-Calculating PL for parameter  kon  and iter =  8 .  step = 0.00694284 kon  =  7.021168 => Likelihood =  10.01184 
-Calculating PL for parameter  kon  and iter =  9 .  step = 0.00694284 kon  =  7.028111 => Likelihood =  10.42363 
-Forward search ended after  9 iterations. 
+Calculating PL for parameter  kon  and iter =  1 .  step = 0.008680828 kon  =  6.951521 => Likelihood =  6.739859 
+Calculating PL for parameter  kon  and iter =  2 .  step = 0.007202695 kon  =  6.958724 => Likelihood =  6.979335 
+Calculating PL for parameter  kon  and iter =  3 .  step = 0.004949948 kon  =  6.963673 => Likelihood =  7.225448 
+Calculating PL for parameter  kon  and iter =  4 .  step = 0.004253296 kon  =  6.967927 => Likelihood =  7.567249 
+Calculating PL for parameter  kon  and iter =  5 .  step = 0.004400637 kon  =  6.972327 => Likelihood =  7.897785 
+Calculating PL for parameter  kon  and iter =  6 .  step = 0.003912265 kon  =  6.97624 => Likelihood =  8.237864 
+Calculating PL for parameter  kon  and iter =  7 .  step = 0.003567086 kon  =  6.979807 => Likelihood =  8.586367 
+Calculating PL for parameter  kon  and iter =  8 .  step = 0.003392137 kon  =  6.983199 => Likelihood =  8.944832 
+Calculating PL for parameter  kon  and iter =  9 .  step = 0.003045098 kon  =  6.986244 => Likelihood =  9.302968 
+Calculating PL for parameter  kon  and iter =  10 .  step = 0.002856094 kon  =  6.9891 => Likelihood =  9.663896 
+Calculating PL for parameter  kon  and iter =  11 .  step = 0.002702923 kon  =  6.991803 => Likelihood =  10.02796 
+Calculating PL for parameter  kon  and iter =  12 .  step = 0.002563414 kon  =  6.994366 => Likelihood =  10.39375 
+Forward search ended after  12 iterations. 
 Backward search begins... 
-Calculating PL for parameter  kon  and iter =  1 .  step = 0.02092669 kon  =  6.921913 => Likelihood =  6.860376 
-Calculating PL for parameter  kon  and iter =  2 .  step = 0.02264787 kon  =  6.899265 => Likelihood =  8.219044 
-Calculating PL for parameter  kon  and iter =  3 .  step = 0.006899265 kon  =  6.892366 => Likelihood =  8.692101 
-Calculating PL for parameter  kon  and iter =  4 .  step = 0.006892366 kon  =  6.885474 => Likelihood =  9.218242 
-Calculating PL for parameter  kon  and iter =  5 .  step = 0.007567758 kon  =  6.877906 => Likelihood =  10.14403 
-Calculating PL for parameter  kon  and iter =  6 .  step = 0.01023649 kon  =  6.86767 => Likelihood =  11.15594 
-Backward search ended after  6 iterations. 
+Calculating PL for parameter  kon  and iter =  1 .  step = 0.008680828 kon  =  6.934159 => Likelihood =  6.957753 
+Calculating PL for parameter  kon  and iter =  2 .  step = 0.02200701 kon  =  6.912152 => Likelihood =  7.96313 
+Calculating PL for parameter  kon  and iter =  3 .  step = 0.02237321 kon  =  6.889779 => Likelihood =  10.07903 
+Calculating PL for parameter  kon  and iter =  4 .  step = 0.000694284 kon  =  6.889085 => Likelihood =  10.16143 
+Calculating PL for parameter  kon  and iter =  5 .  step = 0.000694284 kon  =  6.88839 => Likelihood =  10.24478 
+Calculating PL for parameter  kon  and iter =  6 .  step = 0.000694284 kon  =  6.887696 => Likelihood =  10.35654 
+Calculating PL for parameter  kon  and iter =  7 .  step = 0.000694284 kon  =  6.887002 => Likelihood =  10.44211 
+Backward search ended after  7 iterations. 
